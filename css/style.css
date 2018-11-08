@@ -394,3 +394,36 @@ template {
 [hidden] {
   display: none;
 }
+@font-face {
+  font-family: "MuseoSansCyrl";
+  src: url("../fonts/Museo Sans/MuseoSansCyrl 300.otf");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MuseoSansCyrl";
+  src: url("../fonts/Museo Sans/MuseoSansCyrl 500.otf");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "MuseoSansCyrl";
+  src: url("../fonts/Museo Sans/MuseoSansCyrl 700.otf");
+  font-weight: 700;
+  font-style: normal;
+}
+/* Брейкпоинты */
+/* Паддинги */
+/* Цвета */
+.wrapper {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+.page {
+  font-family: "MuseoSansCyrl", Arial, sans-serif;
+  font-weight: 500;
+}
+.menu-mobile {
+  display: none;
+}
