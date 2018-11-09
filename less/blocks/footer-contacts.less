@@ -1,0 +1,81 @@
+.footer-contacts__list {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 230px;
+  margin: 0;
+
+  @media (max-width: @tablet) {
+    width: 192px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 125px;
+      left: 90px;
+      width: 68px;
+      height: 1px;
+      background: white;
+    }
+  }
+}
+
+.footer-contacts__item {
+  margin-top: 35px;
+  text-align: end;
+
+  @media (max-width: @tablet) {
+    margin-top: 25px;
+  }
+}
+
+.footer-contacts__item-title {
+  display: inline;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 500;
+  box-shadow: inset 0 -1px currentColor;
+
+  @media (max-width: @tablet) {
+    font-size: 16px;
+    box-shadow: none;
+  }
+}
+
+.footer-contacts__item-txt {
+  line-height: 24px;
+  margin-top: 12px;
+
+  @media (max-width: @tablet) {
+    font-size: 14px;
+    margin-top: 7px;
+  }
+}
+
+.footer-contacts__item-delivery-tel,
+.footer-contacts__item-orders-tel {
+  position: relative;
+  padding-left: 30px;
+  font-weight: 700;
+  transition: 0.3s;
+
+  @media (max-width: @tablet) {
+    padding-left: 15px;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: @red;
+  }
+
+  &::before {
+    content: url(../img/footer/tel.png);
+    position: absolute;
+    left: 10px;
+
+    @media (max-width: @tablet) {
+      left: 2px;
+    }
+  }
+}
