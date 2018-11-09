@@ -40,7 +40,7 @@ gulp.task("js", function() {
     .pipe(jsMinify())
     .pipe(rename("script.min.js"))
     .pipe(gulp.dest("js"))
-})
+});
 
 gulp.task("serve", function() {
   server.init({
