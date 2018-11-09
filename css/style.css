@@ -395,23 +395,58 @@ template {
   display: none;
 }
 @font-face {
-  font-family: "MuseoSansCyrl";
-  src: local("HelveticaNeueCyr Light"), local("helveticaneuecyr-light"), url("../fonts/HelveticaNeueCyr/helveticaneuecyr-light.woff") format("woff"), url("../fonts/HelveticaNeueCyr/helveticaneuecyr-light.woff2") format("woff2");
-  font-weight: 300;
+  font-family: "FontAwesome";
+  src: local("FontAwesome"), local("fontawesome_regular"), url("../fonts/FontAwesome/fontawesome_regular.woff") format("woff"), url("../fonts/FontAwesome/fontawesome_regular.woff") format("woff2");
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "MuseoSansCyrl";
-  src: local("HelveticaNeueCyr Regular"), local("helveticaneuecyr-Regular"), url("../fonts/HelveticaNeueCyr/helveticaneuecyr-bold.woff") format("woff"), url("../fonts/HelveticaNeueCyr/helveticaneuecyr-bold.woff2") format("woff2");
+  font-family: "GeckoPersonalUseOnly";
+  src: local("GeckoPersonalUseOnly"), local("gecko_personal_use_only"), url("../fonts/GeckoPersonalUseOnly/gecko_personal_use_only.woff") format("woff"), url("../fonts/GeckoPersonalUseOnly/gecko_personal_use_only.woff") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "MinionProRegular";
+  src: local("MinionPro Regular"), local("minionpro-regular"), url("../fonts/MinionProRegular/minionpro-regular.woff") format("woff"), url("../fonts/MinionProRegular/minionpro-regular.woff") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "MuseoSansCyrl";
-  src: local("HelveticaNeueCyr Bold"), local("helveticaneuecyr-bold"), url("../fonts/HelveticaNeueCyr/helveticaneuecyr-bold.woff") format("woff"), url("../fonts/HelveticaNeueCyr/helveticaneuecyr-bold.woff2") format("woff2");
+  src: local("HelveticaNeueCyr Thin "), local("helveticaneuecyr-Thin"), url("../fonts/MuseoSans/museosanscyrl_100.woff") format("woff"), url("../fonts/MuseoSans/museosanscyrl_100.woff") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "MuseoSansCyrl";
+  src: local("HelveticaNeueCyr Light"), local("helveticaneuecyr-light"), url("../fonts/MuseoSans/museosanscyrl_300.woff") format("woff"), url("../fonts/MuseoSans/museosanscyrl_300.woff") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "MuseoSansCyrl";
+  src: local("HelveticaNeueCyr Medium"), local("helveticaneuecyr-medium"), url("../fonts/MuseoSans/museosanscyrl_500.woff") format("woff"), url("../fonts/MuseoSans/museosanscyrl_500.woff") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "MuseoSansCyrl";
+  src: local("HelveticaNeueCyr Bold"), local("helveticaneuecyr-bold"), url("../fonts/MuseoSans/museosanscyrl_700.woff") format("woff"), url("../fonts/MuseoSans/museosanscyrl_700.woff") format("woff2");
   font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "MuseoSansCyrl";
+  src: local("HelveticaNeueCyr Black"), local("helveticaneuecyr-Black"), url("../fonts/MuseoSans/museosanscyrl_900.woff") format("woff"), url("../fonts/MuseoSans/museosanscyrl_900.woff") format("woff2");
+  font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
@@ -429,8 +464,10 @@ html {
           box-sizing: inherit;
 }
 body {
-  min-width: 320px;
-  font-weight: 300;
+  min-width: 455px;
+  font-family: "MuseoSansCyrl", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
   -webkit-font-smoothing: antialiased;
 }
 main {
@@ -469,7 +506,233 @@ img {
   margin: 0 auto;
   padding: 0 30px;
 }
-.page {
-  font-family: "MuseoSansCyrl", Arial, sans-serif;
+@media (max-width: 750px) {
+  .wrapper {
+    padding: 0 20px;
+  }
+}
+.page-footer {
+  background-color: black;
+  color: white;
+}
+.page-footer a {
+  text-decoration: none;
+  color: white;
+}
+.page-footer ul {
+  list-style: none;
+  padding: 0;
+}
+.page-footer p {
+  margin: 0;
+}
+.page-footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.page-footer__left {
+  width: 200px;
+}
+.page-footer__left br {
+  display: none;
+}
+@media (max-width: 750px) {
+  .page-footer__left {
+    width: 130px;
+  }
+  .page-footer__left br {
+    display: inline;
+  }
+}
+.page-footer__logo {
+  display: block;
+  padding: 20px 0;
+  margin-left: 27px;
+}
+@media (max-width: 750px) {
+  .page-footer__logo {
+    margin-left: 24px;
+  }
+}
+@media (max-width: 750px) {
+  .page-footer__logo img {
+    width: 73px;
+  }
+}
+.page-footer__left-copyright {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 300;
+}
+@media (max-width: 750px) {
+  .page-footer__left-copyright {
+    font-size: 11px;
+  }
+}
+.page-footer__left-social {
+  margin-top: 20px;
+  margin-bottom: 25px;
+}
+@media (max-width: 750px) {
+  .page-footer__left-social {
+    margin-top: 29px;
+    font-size: 12px;
+  }
+}
+.page-footer__left-vk {
+  display: block;
+  margin-top: 20px;
+}
+.page-footer__left-vk-img {
+  margin-left: 67px;
+}
+@media (max-width: 750px) {
+  .page-footer__left-vk-img {
+    margin-left: 42px;
+  }
+}
+.page-footer__nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 560px;
+  margin: 0;
+  font-weight: 700;
+  margin-top: 22%;
+}
+.page-footer__nav-list .hidden-item {
+  display: none;
+}
+@media (max-width: 1024px) {
+  .page-footer__nav-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: auto;
+    margin-top: 27px;
+  }
+  .page-footer__nav-list .hidden-item {
+    display: block;
+  }
+}
+.page-footer__nav-item {
+  text-align: start;
+  margin-bottom: 12px;
+  font-size: 20px;
+}
+@media (max-width: 750px) {
+  .page-footer__nav-item {
+    font-size: 14px;
+  }
+}
+.page-footer__nav-link {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.page-footer__nav-link:hover,
+.page-footer__nav-link:active,
+.page-footer__nav-link:focus {
+  color: #ff0000;
+}
+.footer-contacts__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 230px;
+  margin: 0;
+}
+@media (max-width: 750px) {
+  .footer-contacts__list {
+    width: 192px;
+  }
+  .footer-contacts__list::before {
+    content: "";
+    position: absolute;
+    top: 125px;
+    left: 90px;
+    width: 68px;
+    height: 1px;
+    background: white;
+  }
+}
+.footer-contacts__item {
+  margin-top: 35px;
+  text-align: end;
+}
+@media (max-width: 750px) {
+  .footer-contacts__item {
+    margin-top: 25px;
+  }
+}
+.footer-contacts__item-title {
+  display: inline;
+  font-size: 18px;
+  line-height: 30px;
   font-weight: 500;
+  -webkit-box-shadow: inset 0 -1px currentColor;
+          box-shadow: inset 0 -1px currentColor;
+}
+@media (max-width: 750px) {
+  .footer-contacts__item-title {
+    font-size: 16px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+.footer-contacts__item-txt {
+  line-height: 24px;
+  margin-top: 12px;
+}
+@media (max-width: 750px) {
+  .footer-contacts__item-txt {
+    font-size: 14px;
+    margin-top: 7px;
+  }
+}
+.footer-contacts__item-delivery-tel,
+.footer-contacts__item-orders-tel {
+  position: relative;
+  padding-left: 30px;
+  font-weight: 700;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+@media (max-width: 750px) {
+  .footer-contacts__item-delivery-tel,
+  .footer-contacts__item-orders-tel {
+    padding-left: 15px;
+  }
+}
+.footer-contacts__item-delivery-tel:hover,
+.footer-contacts__item-orders-tel:hover,
+.footer-contacts__item-delivery-tel:active,
+.footer-contacts__item-orders-tel:active,
+.footer-contacts__item-delivery-tel:focus,
+.footer-contacts__item-orders-tel:focus {
+  color: #ff0000;
+}
+.footer-contacts__item-delivery-tel::before,
+.footer-contacts__item-orders-tel::before {
+  content: url(../img/footer/tel.png);
+  position: absolute;
+  left: 10px;
+}
+@media (max-width: 750px) {
+  .footer-contacts__item-delivery-tel::before,
+  .footer-contacts__item-orders-tel::before {
+    left: 2px;
+  }
 }

@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.min.css">
   <title>Takara</title>
 </head>
-<body class="page">
+
+<body>
 <header class="page-header">
   <div class="page-header__wrapper wrapper">
     <nav class="page-header__nav-mobile menu-mobile">
@@ -87,24 +89,27 @@
 
 <main>
   <section>
-
+    <p>MuseoSansCyrl</p>
   </section>
 </main>
 
 <footer class="page-footer">
   <div class="page-footer__wrapper wrapper">
     <div class="page-footer__left">
-      <div class="page-footer__logo">
-        <img class="page-footer__logo-img" src="footer-logo.png" alt="logo">
-      </div>
+      <a href="index.html" class="page-footer__logo">
+        <picture>
+          <source media="(max-width: 750px)" srcset="img/footer/logo-mobile.png">
+          <img class="page-footer__logo-img" src="img/footer/logo.png" alt="logo" width="116px">
+        </picture>
+      </a>
       <p class="page-footer__left-copyright">
-        © ТАКАРА - Суши-бары и служба доставки, г. Псков, 2011 - 2018.
+        © ТАКАРА - Суши-бары и служба доставки,<br> г. Псков, 2011 - 2018.
       </p>
       <div class="page-footer__left-social">
         <span class="page-footer__left-span">Мы есть в Вконтакте</span>
-        <div class="page-footer__left-vk">
-          <img class="page-footer__left-vk-img" src="vk.png" alt="vkontakte">
-        </div>
+        <a href="https://vk.com/takara.pskov" class="page-footer__left-vk">
+          <img class="page-footer__left-vk-img" src="img/footer/vk.png" alt="vkontakte">
+        </a>
       </div>
     </div>
     <nav class="page-footer__nav">
@@ -121,6 +126,9 @@
         <li class="page-footer__nav-item">
           <a class="page-footer__nav-link" href="menu.html">Меню</a>
         </li>
+        <li class="page-footer__nav-item hidden-item">
+          <a class="page-footer__nav-link" href="about.html">О нас</a>
+        </li>
         <li class="page-footer__nav-item">
           <a class="page-footer__nav-link" href="contacts.html">Контакты</a>
         </li>
@@ -129,26 +137,31 @@
     <div class="page-footer__contacts footer-contacts">
       <ul class="footer-contacts__list">
         <li class="footer-contacts__item">
-          <p class="footer-contacts__item-title"></p>
-          <p class="footer-contacts__item-delivery">На вынос
-            <span class="footer-contacts__item-delivery-tel">612 - 001</span>
-          </p>
-          <p class="footer-contacts__item-orders">Приём заказов
-            <span class="footer-contacts__item-orders-tel">602 - 067</span>
-          </p>
+          <p class="footer-contacts__item-title">ул. Западная, 16 Б</p>
+          <div class="footer-contacts__item-txt">
+            <p class="footer-contacts__item-delivery">На вынос
+              <a href="tel:612-001" class="footer-contacts__item-delivery-tel">612 - 001
+              </a></p>
+            <p class="footer-contacts__item-orders">Приём заказов
+              <a href="tel:602-067" class="footer-contacts__item-orders-tel">602 - 067</a>
+            </p>
+          </div>
         </li>
         <li class="footer-contacts__item">
-          <p class="footer-contacts__item-title"></p>
-          <p class="footer-contacts__item-delivery">На вынос
-            <span class="footer-contacts__item-delivery-tel">612 - 011</span>
-          </p>
-          <p class="footer-contacts__item-orders">Приём заказов
-            <span class="footer-contacts__item-orders-tel">602 - 229</span>
-          </p>
+          <p class="footer-contacts__item-title">пр. Октябрьский, 19А</p>
+          <div class="footer-contacts__item-txt">
+            <p class="footer-contacts__item-delivery">На вынос
+              <a href="tel:612-011" class="footer-contacts__item-delivery-tel">612 - 011</a>
+            </p>
+            <p class="footer-contacts__item-orders">Приём заказов
+              <a href="tel:602-229" class="footer-contacts__item-orders-tel">602 - 229</a>
+            </p>
+          </div>
         </li>
       </ul>
     </div>
   </div>
 </footer>
 </body>
+
 </html>
