@@ -1,0 +1,51 @@
+.page-header {
+  background: @white;
+}
+
+.page-header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page-header__vertical-menu {
+  display: none;
+
+  &--active {
+    .page-header__vertical-menu-content {
+      display: block;
+    }
+  }
+}
+
+.page-header__vertical-button {
+  .open {
+    display: block;
+  }
+
+  .close {
+    display: none;
+  }
+
+  &--active {
+    .open {
+      display: none;
+    }
+
+    .close {
+      display: block;
+    }
+  }
+}
+
+.page-header__vertical-menu-content {
+  display: none;
+}
+
+.page-header__logo {
+  @media (max-width: @tablet - 1) {
+    img {
+      width: 170px;
+      height: 91px;
+    }
+  }
+}
