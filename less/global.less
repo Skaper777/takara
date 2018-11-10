@@ -13,6 +13,7 @@ body {
   font-family: @MuseoSansCyrl;
   font-size: 14px;
   font-weight: 500;
+  color: @black;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -35,6 +36,13 @@ ul {
 img {
   max-width: 100%;
   vertical-align: middle;
+}
+
+// Убираем стрелки с input
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .visually-hidden {
