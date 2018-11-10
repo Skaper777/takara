@@ -13,15 +13,8 @@
   <div class="page-header__wrapper wrapper">
     <div class="page-header__vertical-menu">
       <button class="page-header__vertical-button button" type="button" title="Открыть меню">
-        <svg class="open" xmlns="http://www.w3.org/2000/svg" width="26" height="30" viewBox="0 0 448 512">
-          <path fill="currentColor"
-                d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path>
-        </svg>
-        <svg class="close" xmlns="http://www.w3.org/2000/svg" width="26" height="30" viewBox="0 0 352 512">
-          <path fill="currentColor"
-                d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path>
-        </svg>
-
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-times"></i>
       </button>
       <div class="page-header__vertical-menu-content">
         <h3 class="page-header__vertical-title">Меню</h3>
@@ -84,57 +77,136 @@
       </picture>
     </a>
     <div class="page-header__center-container">
+      <p class="page-header__cart-info">Прием заказов с 11:00 до 23:00</p>
       <div class="page-header__cart-wrapper">
-        <p class="page-header__cart-info">Прием заказов с 11:00 до 23:00</p>
-        <a href="#" class="page-header__cart-button-icon" title="Открыть корзину">
-          <svg xmlns="http://www.w3.org/2000/svg" width="28" viewBox="0 0 448 512">
-            <path fill="currentColor"
-                  d="M352 160v-32C352 57.42 294.579 0 224 0 153.42 0 96 57.42 96 128v32H0v272c0 44.183 35.817 80 80 80h288c44.183 0 80-35.817 80-80V160h-96zm-192-32c0-35.29 28.71-64 64-64s64 28.71 64 64v32H160v-32zm160 120c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24zm-192 0c-13.255 0-24-10.745-24-24s10.745-24 24-24 24 10.745 24 24-10.745 24-24 24z"></path>
-          </svg>
-        </a>
-        <form class="page-header__cart-form" action="/" method="post">
-          <a href="#" class="page-header__cart-button button">Корзина</a>
-
+        <div class="page-header__cart-top">
+          <a href="#" class="page-header__cart-link button">Корзина</a>
+          <div class="page-header__cart-top-button-wrapper">
+            <a href="#" class="page-header__cart-button" title="Открыть корзину">
+              <i class="fas fa-shopping-bag"></i>
+              <span>1</span>
+            </a>
+            <p class="page-header__cart-top-total-price">
+              <span class="goods-total-price-value">489</span>
+              <i class="fas fa-ruble-sign"></i>
+            </p>
+            <button class="page-header__cart-top-item button">
+              <span class="page-header__cart-top-item-goods">1</span>
+              <span> товар</span>
+              <i class="fas fa-angle-down"></i>
+            </button>
+          </div>
+        </div>
+        <form class="page-header__cart-form goods-form" action="/" method="post">
+          <h3 class="page-header__cart-form-title">Корзина</h3>
           <ul class="page-header__cart-list">
-            <li class="page-header__cart-item">
-              <button class="button-close button" type="button">X</button>
-              <a href="#" class="page-header__cart-title">Калифорния креветка</a>
-              <div class="page-header__cart-input-wrapper">
-                <button class="page-header__cart-amount page-header__cart-amount--subtraction" type="button"
-                        title="Уменьшить количество">-
-                </button>
-                <label class="page-header__cart-label">
-                  <input class="page-header__cart-input" name="Калифорния креветка" type="number" value="1"
-                         title="Количество">
-                </label>
-                <button class="page-header__cart-amount page-header__cart-amount--addition" type="button"
-                        title="Увеличить количество">+
+            <li class="page-header__cart-item goods-container">
+              <div class="page-header__cart-title-wrapper">
+                <a href="#" class="page-header__cart-title">Набор “Ямато”</a>
+                <button class="button goods-delete" type="button" title="Удалить">
+                  <i class="fas fa-times"></i>
                 </button>
               </div>
-              <span class="page-header__cart-item-price">
-                250 руб.
-                <svg xmlns="http://www.w3.org/2000/svg" width="12" viewBox="0 0 384 512">
-                  <path fill="currentColor"
-                        d="M239.36 320C324.48 320 384 260.542 384 175.071S324.48 32 239.36 32H76c-6.627 0-12 5.373-12 12v206.632H12c-6.627 0-12 5.373-12 12V308c0 6.627 5.373 12 12 12h52v32H12c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h52v52c0 6.627 5.373 12 12 12h58.56c6.627 0 12-5.373 12-12v-52H308c6.627 0 12-5.373 12-12v-40c0-6.627-5.373-12-12-12H146.56v-32h92.8zm-92.8-219.252h78.72c46.72 0 74.88 29.11 74.88 74.323 0 45.832-28.16 75.561-76.16 75.561h-77.44V100.748z"></path>
-                </svg>
-              </span>
+              <div class="page-header__cart-input-wrapper">
+                <button class="page-header__cart-amount page-header__cart-amount--subtraction button goods-subtraction"
+                        type="button"
+                        title="Уменьшить количество">
+                  <span>-</span>
+                </button>
+                <label class="page-header__cart-label">
+                  <input class="page-header__cart-input goods-input" name="Калифорния креветка" type="number" value="1"
+                         title="Количество">
+                </label>
+                <button class="page-header__cart-amount page-header__cart-amount--addition button goods-addition"
+                        type="button"
+                        title="Увеличить количество">
+                  <span>+</span>
+                </button>
+                <div class="page-header__cart-item-price">
+                  <span class="goods-price-value" data-price="489">489</span>
+                  <span class="page-header__cart-sign">руб.</span>
+                  <i class="fas fa-ruble-sign"></i>
+                </div>
+              </div>
+            </li>
+            <li class="page-header__cart-item goods-container">
+              <div class="page-header__cart-title-wrapper">
+                <a href="#" class="page-header__cart-title">Запечённые</a>
+                <button class="button goods-delete" type="button" title="Удалить">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+              <div class="page-header__cart-input-wrapper">
+                <button class="page-header__cart-amount page-header__cart-amount--subtraction button goods-subtraction"
+                        type="button"
+                        title="Уменьшить количество">
+                  <span>-</span>
+                </button>
+                <label class="page-header__cart-label">
+                  <input class="page-header__cart-input goods-input" name="Калифорния креветка" type="number" value="1"
+                         title="Количество">
+                </label>
+                <button class="page-header__cart-amount page-header__cart-amount--addition button goods-addition"
+                        type="button"
+                        title="Увеличить количество">
+                  <span>+</span>
+                </button>
+                <div class="page-header__cart-item-price">
+                  <span class="goods-price-value" data-price="65">65</span>
+                  <span class="page-header__cart-sign">руб.</span>
+                  <i class="fas fa-ruble-sign"></i>
+                </div>
+              </div>
             </li>
           </ul>
           <div class="page-header__cart-total-price-wrapper">
             <div class="page-header__cart-total-price-text">
               <span>Сумма</span><span> заказа</span>:
             </div>
-            <span class="page-header__cart-total-price">
-              489
-              <svg xmlns="http://www.w3.org/2000/svg" width="12" viewBox="0 0 384 512">
-                  <path fill="currentColor"
-                        d="M239.36 320C324.48 320 384 260.542 384 175.071S324.48 32 239.36 32H76c-6.627 0-12 5.373-12 12v206.632H12c-6.627 0-12 5.373-12 12V308c0 6.627 5.373 12 12 12h52v32H12c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h52v52c0 6.627 5.373 12 12 12h58.56c6.627 0 12-5.373 12-12v-52H308c6.627 0 12-5.373 12-12v-40c0-6.627-5.373-12-12-12H146.56v-32h92.8zm-92.8-219.252h78.72c46.72 0 74.88 29.11 74.88 74.323 0 45.832-28.16 75.561-76.16 75.561h-77.44V100.748z"></path>
-                </svg>
-            </span>
+            <div class="page-header__cart-total-price goods-total-price">
+              <span class="goods-total-price-value">489</span>
+              <span class="page-header__cart-sign">руб.</span>
+              <i class="fas fa-ruble-sign"></i>
+            </div>
           </div>
           <button class="page-header__cart-submit-button button" type="submit">Оформить</button>
         </form>
       </div>
+      <ul class="page-header__center-list">
+        <li class="page-header__center-item">
+          <a href="#" class="page-header__center-link">Главная</a>
+        </li>
+        <li class="page-header__center-item">
+          <a href="#" class="page-header__center-link">Акции</a>
+        </li>
+        <li class="page-header__center-item">
+          <a href="#" class="page-header__center-link">Доставка</a>
+        </li>
+        <li class="page-header__center-item">
+          <a href="#" class="page-header__center-link">Меню</a>
+        </li>
+        <li class="page-header__center-item">
+          <a href="#" class="page-header__center-link">Контакты</a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-header__right-container">
+      <button class="page-header__right-button button" type="button" title="Открыть контакты">
+        <i class="fas fa-phone"></i>
+        <i class="fas fa-angle-down"></i>
+      </button>
+      <ul class="page-header__right-list">
+        <li class="page-header__right-item">
+          <p class="page-header__right-address">ул. Западная, 16 Б</p>
+          <p class="page-header__right-phone">На вынос <i class="fas fa-phone"></i> <strong>612 - 001</strong></p>
+          <p class="page-header__right-phone">Приём заказов <i class="fas fa-phone"></i> <strong>602 - 067</strong></p>
+        </li>
+        <li class="page-header__right-item">
+          <p class="page-header__right-address">пр. Октябрьский, 19А</p>
+          <p class="page-header__right-phone">На вынос <i class="fas fa-phone"></i> <strong>612 - 011</strong></p>
+          <p class="page-header__right-phone">Приём заказов <i class="fas fa-phone"></i> <strong>602 - 229</strong></p>
+        </li>
+      </ul>
     </div>
   </div>
 </header>
@@ -214,6 +286,9 @@
     </div>
   </div>
 </footer>
+
+<script src="js/utils.js"></script>
+<script src="js/header.js"></script>
 </body>
 
 </html>

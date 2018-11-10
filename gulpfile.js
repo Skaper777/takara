@@ -85,7 +85,7 @@ gulp.task("html", function() {
     .pipe(posthtml([
       include()
     ]))
-    .pipe(gulp.dest("."))
+    // .pipe(gulp.dest("."))
     .pipe(server.reload({
       stream: true
     }));
