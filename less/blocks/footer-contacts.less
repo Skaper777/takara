@@ -55,12 +55,12 @@
 .footer-contacts__item-delivery-tel,
 .footer-contacts__item-orders-tel {
   position: relative;
-  padding-left: 30px;
   font-weight: 700;
   transition: 0.3s;
 
-  @media (max-width: @tablet) {
-    padding-left: 15px;
+  .fa-phone {
+    margin-left: 5px;
+    font-size: 10px;
   }
 
   &:hover,
@@ -69,13 +69,7 @@
     color: @red;
   }
 
-  &::before {
-    content: url(../img/footer/tel.png);
-    position: absolute;
-    left: 10px;
-
-    @media (max-width: @tablet) {
-      left: 2px;
-    }
+  @media (max-width: @tablet) {
+    padding-left: 15px;
   }
 }

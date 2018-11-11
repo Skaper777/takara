@@ -5280,8 +5280,8 @@ input::-webkit-inner-spin-button {
 .page-header__right-phone a .fa-phone {
   margin-left: 5px;
 }
-.page-header__right-phone a:hover .fa-phone,
-.page-header__right-phone a:focus .fa-phone {
+.page-header__right-phone a:hover,
+.page-header__right-phone a:focus {
   color: #ff0000;
 }
 .page-footer {
@@ -5478,16 +5478,14 @@ input::-webkit-inner-spin-button {
 .footer-contacts__item-delivery-tel,
 .footer-contacts__item-orders-tel {
   position: relative;
-  padding-left: 30px;
   font-weight: 700;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
-@media (max-width: 768px) {
-  .footer-contacts__item-delivery-tel,
-  .footer-contacts__item-orders-tel {
-    padding-left: 15px;
-  }
+.footer-contacts__item-delivery-tel .fa-phone,
+.footer-contacts__item-orders-tel .fa-phone {
+  margin-left: 5px;
+  font-size: 10px;
 }
 .footer-contacts__item-delivery-tel:hover,
 .footer-contacts__item-orders-tel:hover,
@@ -5497,16 +5495,10 @@ input::-webkit-inner-spin-button {
 .footer-contacts__item-orders-tel:focus {
   color: #ff0000;
 }
-.footer-contacts__item-delivery-tel::before,
-.footer-contacts__item-orders-tel::before {
-  content: url(../img/footer/tel.png);
-  position: absolute;
-  left: 10px;
-}
 @media (max-width: 768px) {
-  .footer-contacts__item-delivery-tel::before,
-  .footer-contacts__item-orders-tel::before {
-    left: 2px;
+  .footer-contacts__item-delivery-tel,
+  .footer-contacts__item-orders-tel {
+    padding-left: 15px;
   }
 }
 .cursor--pointer {
