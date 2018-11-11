@@ -2,16 +2,6 @@
   background-color: black;
   color: white;
 
-  a {
-    text-decoration: none;
-    color: white;
-  }
-
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-
   p {
     margin: 0;
   }
@@ -121,11 +111,13 @@
 }
 
 .page-footer__nav-link {
+  color: white;
   transition: 0.3s;
 
   &:hover,
   &:active,
   &:focus {
     color: @red;
+    box-shadow: inset 0 -2px currentColor;
   }
 }
