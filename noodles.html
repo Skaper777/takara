@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Лапша WOK</title>
+</head>
+<body>
+<header class="page-header page-header--shagow">
+  <div class="page-header__wrapper wrapper">
+    <div class="page-header__vertical-menu">
+      <button class="page-header__vertical-button button" type="button" title="Открыть меню">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="page-header__vertical-menu-content">
+        <h3 class="page-header__vertical-title">Меню</h3>
+        <ul class="page-header__vertical-list">
+          <li class="page-header__vertical-item">
+            <a href="#" class="page-header__vertical-link">Суши</a>
+          </li>
+          <li class="page-header__vertical-item">
+            <a href="#" class="page-header__vertical-link">Роллы</a>
+          </li>
+          <li class="page-header__vertical-item">
+            <a href="#" class="page-header__vertical-link">Запечённые роллы</a>
+          </li>
+          <li class="page-header__vertical-item">
+            <a href="#" class="page-header__vertical-link">Наборы</a>
+          </li>
+          <li class="page-header__vertical-item">
+            <a href="#" class="page-header__vertical-link">Пицца</a>
+          </li>
+          <li class="page-header__vertical-item">
+            <a href="noodles.html" class="page-header__vertical-link">Лапша WOK</a>
+          </li>
+          <li class="page-header__vertical-item">
+            <a href="#" class="page-header__vertical-link">Супы</a>
+          </li>
+          <li class="page-header__vertical-item">
+            <a href="#" class="page-header__vertical-link">Бизнес ланчи</a>
+          </li>
+          <li class="page-header__vertical-item">
+            <a href="#" class="page-header__vertical-link">Салаты и закуски</a>
+          </li>
+          <li class="page-header__vertical-item">
+            <a href="#" class="page-header__vertical-link">Десерты</a>
+          </li>
+          <li class="page-header__vertical-item">
+            <a href="#" class="page-header__vertical-link">Напитки</a>
+          </li>
+        </ul>
+        <ul class="page-header__vertical-list">
+          <li class="page-header__vertical-item">
+            <a href="#" class="page-header__vertical-link">Акции</a>
+          </li>
+          <li class="page-header__vertical-item">
+            <a href="#" class="page-header__vertical-link">О нас</a>
+          </li>
+          <li class="page-header__vertical-item">
+            <a href="#" class="page-header__vertical-link">Доставка</a>
+          </li>
+          <li class="page-header__vertical-item">
+            <a href="#" class="page-header__vertical-link">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <a href="index.html" class="page-header__logo">
+      <picture>
+        <source media="(max-width: 767px)" srcset="img/logo-min.png">
+        <img class="page-header__logo-image" src="img/logo.png" width="116" height="92"
+             alt="Takara 'Готовим с душой соблюдаем традиции'">
+      </picture>
+    </a>
+    <div class="page-header__center-container">
+      <p class="page-header__cart-info">Прием заказов с 11:00 до 23:00</p>
+      <div class="page-header__cart-wrapper">
+        <div class="page-header__cart-top">
+          <a href="#" class="page-header__cart-link button">Корзина</a>
+          <div class="page-header__cart-top-button-wrapper">
+            <a href="#" class="page-header__cart-button" title="Открыть корзину">
+              <i class="fas fa-shopping-bag"></i>
+              <span class="goods-item">1</span>
+            </a>
+            <p class="page-header__cart-top-total-price">
+              <span class="goods-total-price-value">489</span>
+              <i class="fas fa-ruble-sign"></i>
+            </p>
+            <button class="page-header__cart-top-item button">
+              <span class="page-header__cart-top-item-goods goods-item">1</span>
+              <span> товар</span>
+              <i class="fas fa-angle-down"></i>
+            </button>
+          </div>
+        </div>
+        <form class="page-header__cart-form goods-form" action="/" method="post">
+          <h3 class="page-header__cart-form-title">Корзина</h3>
+          <ol class="page-header__cart-list">
+            <li class="page-header__cart-item goods-container">
+              <div class="page-header__cart-title-wrapper">
+                <a href="#" class="page-header__cart-title">Набор “Ямато”</a>
+                <button class="button goods-delete" type="button" title="Удалить">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+              <div class="page-header__cart-input-wrapper">
+                <div class="page-header__cart-input-inner">
+                  <button
+                    class="page-header__cart-amount page-header__cart-amount--subtraction button goods-subtraction"
+                    type="button"
+                    title="Уменьшить количество">
+                    <span>-</span>
+                  </button>
+                  <label class="page-header__cart-label">
+                    <input class="page-header__cart-input goods-input" name="Калифорния креветка" type="number"
+                           value="1" min="1" max="100"
+                           title="Количество">
+                  </label>
+                  <button class="page-header__cart-amount page-header__cart-amount--addition button goods-addition"
+                          type="button"
+                          title="Увеличить количество">
+                    <span>+</span>
+                  </button>
+                </div>
+                <div class="page-header__cart-item-price">
+                  <span class="goods-price-value" data-price="489">489</span>
+                  <span class="page-header__cart-sign">руб.</span>
+                  <i class="fas fa-ruble-sign"></i>
+                </div>
+              </div>
+            </li>
+            <li class="page-header__cart-item goods-container">
+              <div class="page-header__cart-title-wrapper">
+                <a href="#" class="page-header__cart-title">Запечённые</a>
+                <button class="button goods-delete" type="button" title="Удалить">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+              <div class="page-header__cart-input-wrapper">
+                <div class="page-header__cart-input-inner">
+                  <button
+                    class="page-header__cart-amount page-header__cart-amount--subtraction button goods-subtraction"
+                    type="button"
+                    title="Уменьшить количество">
+                    <span>-</span>
+                  </button>
+                  <label class="page-header__cart-label">
+                    <input class="page-header__cart-input goods-input" name="Калифорния креветка" type="number"
+                           value="1" min="1" max="100"
+                           title="Количество">
+                  </label>
+                  <button class="page-header__cart-amount page-header__cart-amount--addition button goods-addition"
+                          type="button"
+                          title="Увеличить количество">
+                    <span>+</span>
+                  </button>
+                </div>
+                <div class="page-header__cart-item-price">
+                  <span class="goods-price-value" data-price="65">65</span>
+                  <span class="page-header__cart-sign">руб.</span>
+                  <i class="fas fa-ruble-sign"></i>
+                </div>
+              </div>
+            </li>
+          </ol>
+          <div class="page-header__cart-total-price-wrapper">
+            <div class="page-header__cart-total-price-text">
+              <span>Сумма</span><span> заказа</span>:
+            </div>
+            <div class="page-header__cart-total-price goods-total-price">
+              <span class="goods-total-price-value">489</span>
+              <span class="page-header__cart-sign">руб.</span>
+              <i class="fas fa-ruble-sign"></i>
+            </div>
+          </div>
+          <button class="page-header__cart-submit-button button" type="submit">Оформить</button>
+        </form>
+      </div>
+      <ul class="page-header__center-list">
+        <li class="page-header__center-item">
+          <a href="index.html" class="page-header__center-link">Главная</a>
+        </li>
+        <li class="page-header__center-item">
+          <a href="#" class="page-header__center-link">Акции</a>
+        </li>
+        <li class="page-header__center-item">
+          <a href="#" class="page-header__center-link">Доставка</a>
+        </li>
+        <li class="page-header__center-item">
+          <a class="page-header__center-link page-header__center-link--active">Меню</a>
+        </li>
+        <li class="page-header__center-item">
+          <a href="#" class="page-header__center-link">Контакты</a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-header__right-container">
+      <button class="page-header__right-button button" type="button" title="Открыть контакты">
+        <i class="fas fa-phone"></i>
+        <i class="fas fa-angle-down"></i>
+      </button>
+      <ul class="page-header__right-list">
+        <li class="page-header__right-item">
+          <p class="page-header__right-address">ул. Западная, 16 Б</p>
+          <p class="page-header__right-phone">
+            На вынос
+            <a href="tel:612 - 001">
+              <i class="fas fa-phone"></i>
+              <strong>612 - 001</strong>
+            </a>
+          </p>
+          <p class="page-header__right-phone">Приём заказов
+            <a href="tel:602 - 067">
+              <i class="fas fa-phone"></i>
+              <strong>602 - 067</strong>
+            </a>
+        </li>
+        <li class="page-header__right-item">
+          <p class="page-header__right-address">пр. Октябрьский, 19А</p>
+          <p class="page-header__right-phone">На вынос
+            <a href="tel:612 - 011">
+              <i class="fas fa-phone"></i>
+              <strong>612 - 011</strong>
+            </a>
+          <p class="page-header__right-phone">Приём заказов
+            <a href="tel:602 - 229">
+              <i class="fas fa-phone"></i>
+              <strong>602 - 229</strong>
+            </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+<main class="page-main">
+  <div class="page-main__wrapper wrapper">
+
+    <!-- Ветикальное меню -->
+    <aside class="page-main__left vertical-menu">
+      <span class="visually-hidden">Список блюд</span>
+      <ul class="vertical-menu__list">
+        <li class="vertical-menu__item">
+          <a href="#" class="vertical-menu__link">Суши</a>
+        </li>
+        <li class="vertical-menu__item">
+          <a href="#" class="vertical-menu__link">Роллы</a>
+        </li>
+        <li class="vertical-menu__item">
+          <a href="#" class="vertical-menu__link">Запечённые роллы</a>
+        </li>
+        <li class="vertical-menu__item">
+          <a href="#" class="vertical-menu__link">Наборы</a>
+        </li>
+        <li class="vertical-menu__item">
+          <a href="#" class="vertical-menu__link">Пицца</a>
+        </li>
+        <li class="vertical-menu__item">
+          <a class="vertical-menu__link vertical-menu__link--active">Лапша WOK</a>
+        </li>
+        <li class="vertical-menu__item">
+          <a href="#" class="vertical-menu__link">Супы</a>
+        </li>
+        <li class="vertical-menu__item">
+          <a href="#" class="vertical-menu__link">Бизнес ланчи</a>
+        </li>
+        <li class="vertical-menu__item">
+          <a href="#" class="vertical-menu__link">Салаты и закуски</a>
+        </li>
+        <li class="vertical-menu__item">
+          <a href="#" class="vertical-menu__link">Десерты</a>
+        </li>
+        <li class="vertical-menu__item">
+          <a href="#" class="vertical-menu__link">Напитки</a>
+        </li>
+      </ul>
+    </aside>
+
+    <!--  Содержимое которое должно быть в main, вставлять в page-main__right -->
+    <div class="page-main__right">
+      <ul class="breadcrumbs">
+        <li class="breadcrumbs__item">
+          <a href="index.html" class="breadcrumbs__link">Главная</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a href="menu.html" class="breadcrumbs__link">Меню</a>
+        </li>
+        <li class="breadcrumbs__item">
+          <a class="breadcrumbs__link breadcrumbs__link--active">Лапша Wok</a>
+        </li>
+      </ul>
+      <h1 class="noodles__h1 h1">Лапша WOK</h1>
+      <form class="noodles__form" action="/" method="get">
+        <p class="noodles__desc">В стоимость блюда входит на выбор: начинка, гарнир, овощи, соус.</p>
+        <div class="noodles__form-fieldset-wrapper noodles__form-fieldset-wrapper--main">
+          <fieldset class="noodles__form-fieldset">
+            <legend class="noodles__form-legend">
+              <span class="visually-hidden">Начинка</span>
+              <span class="noodles__form-legend-img-container">
+                <img class="noodles__form-legend-img" src="img/content/noodles/lapshp_pshenichnaya.jpg" width="1920"
+                     height="1380"
+                     alt="Блюдо">
+              </span>
+              <span class="noodles__form-legend-text noodles__form-legend-text--bold">или</span>
+            </legend>
+            <ul class="noodles__form-list">
+              <li class="noodles__form-item">
+                <label class="noodles__form-label label-radio">
+                  <span class="label-radio__text">Харусаме (рисовая)</span>
+                  <input class="noodles__form-input visually-hidden" type="radio" name="filling" value="1" checked>
+                  <span class="label-radio__icon"></span>
+                </label>
+              </li>
+              <li class="noodles__form-item">
+                <label class="noodles__form-label label-radio">
+                  <span class="label-radio__text">Удон (пшеничная)</span>
+                  <input class="noodles__form-input visually-hidden" type="radio" name="filling" value="2">
+                  <span class="label-radio__icon"></span>
+                </label>
+              </li>
+              <li class="noodles__form-item">
+                <label class="noodles__form-label label-radio">
+                  <span class="label-radio__text">Харусаме (рисовая)</span>
+                  <input class="noodles__form-input visually-hidden" type="radio" name="filling" value="3">
+                  <span class="label-radio__icon"></span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="noodles__form-fieldset">
+            <legend class="noodles__form-legend">
+              <span class="visually-hidden">Гарнир</span>
+              <span class="noodles__form-legend-img-container">
+                <img class="noodles__form-legend-img" src="img/content/noodles/garnish.png" width="260"
+                     height="320" alt="Гарнир">
+              </span>
+              <span class="noodles__form-legend-text">+</span>
+            </legend>
+            <ul class="noodles__form-list">
+              <li class="noodles__form-item">
+                <label class="noodles__form-label label-radio">
+                  <span class="label-radio__text">Рис<br> (белый)</span>
+                  <input class="noodles__form-input visually-hidden" type="radio" name="filling" value="1.1">
+                  <span class="label-radio__icon"></span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="noodles__form-fieldset">
+            <legend class="noodles__form-legend">
+              <span class="visually-hidden">Овощи</span>
+              <span class="noodles__form-legend-img-container">
+                <img class="noodles__form-legend-img" src="img/content/noodles/ovishi.png" width="400"
+                     height="345" alt="Овощи">
+              </span>
+              <span class="noodles__form-legend-text">+</span>
+            </legend>
+            <ul class="noodles__form-list">
+              <li class="noodles__form-item">
+                <label class="noodles__form-label label-radio label-radio--not-pick">
+                  <span class="label-radio__text label-radio__text--width-auto">Лук репчатый, морковь, паприка, капуста, огурец, кунжут</span>
+                  <input class="noodles__form-input visually-hidden" type="radio" name="vegetables" value="1" checked>
+                  <span class="label-radio__icon visually-hidden"></span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="noodles__form-fieldset">
+            <legend class="noodles__form-legend">
+              <span class="visually-hidden">Соус</span>
+              <span class="noodles__form-legend-img-container">
+                <img class="noodles__form-legend-img" src="img/content/noodles/soeviy-sous.jpg" width="414"
+                     height="290" alt="Соус">
+              </span>
+              <span class="noodles__form-legend-text">=</span>
+            </legend>
+            <ul class="noodles__form-list">
+              <li class="noodles__form-item">
+                <label class="noodles__form-label label-radio">
+                  <span class="label-radio__text">Фирменный</span>
+                  <input class="noodles__form-input visually-hidden" type="radio" name="sauce" value="1" checked>
+                  <span class="label-radio__icon"></span>
+                </label>
+              </li>
+              <li class="noodles__form-item">
+                <label class="noodles__form-label label-radio">
+                  <span class="label-radio__text">Сливочный</span>
+                  <input class="noodles__form-input visually-hidden" type="radio" name="sauce" value="2">
+                  <span class="label-radio__icon"></span>
+                </label>
+              </li>
+              <li class="noodles__form-item">
+                <label class="noodles__form-label label-radio">
+                  <span class="label-radio__text">Терияки</span>
+                  <input class="noodles__form-input visually-hidden" type="radio" name="sauce" value="3">
+                  <span class="label-radio__icon"></span>
+                </label>
+              </li>
+              <li class="noodles__form-item">
+                <label class="noodles__form-label label-radio">
+                  <span class="label-radio__text">Острый</span>
+                  <input class="noodles__form-input visually-hidden" type="radio" name="sauce" value="4">
+                  <span class="label-radio__icon"></span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <div class="noodles__form-fieldset-price">
+            <span class="noodles__form-fieldset-price-sale">Акция</span>
+            <span class="noodles__form-fieldset-price-value">139</span>
+            <span class="noodles__form-fieldset-price-sign">руб.</span>
+          </div>
+        </div>
+        <p class="noodles__desc">Сделай её ещё вкуснее и сочнее (дополнительная стоимость)</p>
+        <div class="noodles__form-fieldset-wrapper noodles__form-fieldset-wrapper--more">
+          <fieldset class="noodles__form-fieldset">
+            <legend class="noodles__form-legend">
+              <span class="visually-hidden">Дополнительная начинка</span>
+              <span class="noodles__form-legend-img-container">
+                <img class="noodles__form-legend-img" src="img/content/noodles/big__nazvaniia.png" width="256"
+                     height="194" alt="Дополнительная начинка">
+              </span>
+            </legend>
+            <ul class="noodles__form-list">
+              <li class="noodles__form-item">
+                <label class="noodles__form-label label-radio">
+                  <span class="label-radio__text">Морепродукты (70 гр.)</span>
+                  <span class="label-radio__price">
+                    <span class="label-radio__price-value" data-price="269">269</span>
+                    <i class="fas fa-ruble-sign"></i>
+                  </span>
+                  <input class="noodles__form-input visually-hidden" type="radio" name="add-filling" value="1" checked>
+                  <span class="label-radio__icon"></span>
+                </label>
+              </li>
+              <li class="noodles__form-item">
+                <label class="noodles__form-label label-radio">
+                  <span class="label-radio__text">Говядина (70 гр.)</span>
+                  <span class="label-radio__price">
+                    <span class="label-radio__price-value" data-price="259">259</span>
+                    <i class="fas fa-ruble-sign"></i>
+                  </span>
+                  <input class="noodles__form-input visually-hidden" type="radio" name="add-filling" value="2">
+                  <span class="label-radio__icon"></span>
+                </label>
+              </li>
+              <li class="noodles__form-item">
+                <label class="noodles__form-label label-radio">
+                  <span class="label-radio__text">Свинина (70 гр.)</span>
+                  <span class="label-radio__price">
+                    <span class="label-radio__price-value" data-price="239">239</span>
+                    <i class="fas fa-ruble-sign"></i>
+                  </span>
+                  <input class="noodles__form-input visually-hidden" type="radio" name="add-filling" value="3">
+                  <span class="label-radio__icon"></span>
+                </label>
+              </li>
+              <li class="noodles__form-item">
+                <label class="noodles__form-label label-radio">
+                  <span class="label-radio__text">Курица (70 гр.)</span>
+                  <span class="label-radio__price">
+                    <span class="label-radio__price-value" data-price="229">229</span>
+                    <i class="fas fa-ruble-sign"></i>
+                  </span>
+                  <input class="noodles__form-input visually-hidden" type="radio" name="add-filling" value="4">
+                  <span class="label-radio__icon"></span>
+                </label>
+              </li>
+              <li class="noodles__form-item">
+                <label class="noodles__form-label label-radio">
+                  <span class="label-radio__text">Лосось (70 гр.)</span>
+                  <span class="label-radio__price">
+                    <span class="label-radio__price-value" data-price="279">279</span>
+                    <i class="fas fa-ruble-sign"></i>
+                  </span>
+                  <input class="noodles__form-input visually-hidden" type="radio" name="add-filling" value="4">
+                  <span class="label-radio__icon"></span>
+                </label>
+              </li>
+              <li class="noodles__form-item">
+                <label class="noodles__form-label label-radio">
+                  <span class="label-radio__text">Овощи (110 гр.)</span>
+                  <span class="label-radio__price">
+                    <span class="label-radio__price-value" data-price="199">199</span>
+                    <i class="fas fa-ruble-sign"></i>
+                  </span>
+                  <input class="noodles__form-input visually-hidden" type="radio" name="add-filling" value="4">
+                  <span class="label-radio__icon"></span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="noodles__form-fieldset">
+            <legend class="noodles__form-legend">
+              <span class="visually-hidden">Топинги</span>
+              <span class="noodles__form-legend-img-container">
+                <img class="noodles__form-legend-img" src="img/content/noodles/580b57fbd9996e24bc43c08d-min.png"
+                     width="370" height="370" alt="Топинги">
+              </span>
+            </legend>
+            <ul class="noodles__form-list">
+              <li class="noodles__form-item">
+                <label class="noodles__form-label label-radio">
+                  <span class="label-radio__text">Яйцо жаренное (30 гр.)</span>
+                  <span class="label-radio__price">
+                    <span class="label-radio__price-value" data-price="20">20</span>
+                    <i class="fas fa-ruble-sign"></i>
+                  </span>
+                  <input class="noodles__form-input visually-hidden" type="radio" name="topping" value="1" checked>
+                  <span class="label-radio__icon"></span>
+                </label>
+              </li>
+              <li class="noodles__form-item">
+                <label class="noodles__form-label label-radio">
+                  <span class="label-radio__text">Шампиньоны (30 гр.)</span>
+                  <span class="label-radio__price">
+                    <span class="label-radio__price-value" data-price="30">30</span>
+                    <i class="fas fa-ruble-sign"></i>
+                  </span>
+                  <input class="noodles__form-input visually-hidden" type="radio" name="topping" value="2">
+                  <span class="label-radio__icon"></span>
+                </label>
+              </li>
+              <li class="noodles__form-item">
+                <label class="noodles__form-label label-radio">
+                  <span class="label-radio__text">Бекон (30 гр.)</span>
+                  <span class="label-radio__price">
+                    <span class="label-radio__price-value" data-price="50">50</span>
+                    <i class="fas fa-ruble-sign"></i>
+                  </span>
+                  <input class="noodles__form-input visually-hidden" type="radio" name="topping" value="3">
+                  <span class="label-radio__icon"></span>
+                </label>
+              </li>
+              <li class="noodles__form-item">
+                <label class="noodles__form-label label-radio">
+                  <span class="label-radio__text">Сыр (30 гр.)</span>
+                  <span class="label-radio__price">
+                    <span class="label-radio__price-value" data-price="30">30</span>
+                    <i class="fas fa-ruble-sign"></i>
+                  </span>
+                  <input class="noodles__form-input visually-hidden" type="radio" name="topping" value="4">
+                  <span class="label-radio__icon"></span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="noodles__form-fieldset">
+            <legend class="noodles__form-legend">
+              <span class="visually-hidden">Топинги</span>
+              <span class="noodles__form-legend-img-container">
+                <img class="noodles__form-legend-img" src="img/content/noodles/hero.SauceUkrainian-min.png" width="500"
+                     height="500" alt="Топинги">
+              </span>
+            </legend>
+            <ul class="noodles__form-list">
+              <li class="noodles__form-item">
+                <label class="noodles__form-label label-radio">
+                  <span class="label-radio__text">Фирменный (50 гр.)</span>
+                  <span class="label-radio__price">
+                    <span class="label-radio__price-value" data-price="20">20</span>
+                    <i class="fas fa-ruble-sign"></i>
+                  </span>
+                  <input class="noodles__form-input visually-hidden" type="radio" name="add-sauce" value="1" checked>
+                  <span class="label-radio__icon"></span>
+                </label>
+              </li>
+              <li class="noodles__form-item">
+                <label class="noodles__form-label label-radio">
+                  <span class="label-radio__text">Сливочный (50 гр.)</span>
+                  <span class="label-radio__price">
+                    <span class="label-radio__price-value" data-price="30">30</span>
+                    <i class="fas fa-ruble-sign"></i>
+                  </span>
+                  <input class="noodles__form-input visually-hidden" type="radio" name="add-sauce" value="2">
+                  <span class="label-radio__icon"></span>
+                </label>
+              </li>
+              <li class="noodles__form-item">
+                <label class="noodles__form-label label-radio">
+                  <span class="label-radio__text">Терияки (50 гр.)</span>
+                  <span class="label-radio__price">
+                    <span class="label-radio__price-value" data-price="50">50</span>
+                    <i class="fas fa-ruble-sign"></i>
+                  </span>
+                  <input class="noodles__form-input visually-hidden" type="radio" name="add-sauce" value="3">
+                  <span class="label-radio__icon"></span>
+                </label>
+              </li>
+              <li class="noodles__form-item">
+                <label class="noodles__form-label label-radio">
+                  <span class="label-radio__text">Острый (50 гр.)</span>
+                  <span class="label-radio__price">
+                    <span class="label-radio__price-value" data-price="30">30</span>
+                    <i class="fas fa-ruble-sign"></i>
+                  </span>
+                  <input class="noodles__form-input visually-hidden" type="radio" name="add-sauce" value="4">
+                  <span class="label-radio__icon"></span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+        </div>
+        <div class="noodles__cart-total-wrapper">
+          <div class="noodles__cart-total-text">
+            <span>Итого к оплате:</span>
+            <strong class="noodles__cart-total-value">289</strong>
+            <strong class="noodles__cart-total-sign"> руб.</strong>
+          </div>
+          <button class="noodles__cart-total-button button" type="submit">В корзину</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</main>
+<footer class="page-footer">
+  <div class="page-footer__wrapper wrapper">
+    <div class="page-footer__left">
+      <a href="index.html" class="page-footer__logo">
+        <picture>
+          <source media="(max-width: 750px)" srcset="img/footer/logo-mobile.png">
+          <img class="page-footer__logo-img" src="img/footer/logo.png" alt="logo" width="116">
+        </picture>
+      </a>
+      <p class="page-footer__left-copyright">
+        © ТАКАРА - Суши-бары и служба доставки,<br> г. Псков, 2011 - 2018.
+      </p>
+      <div class="page-footer__left-social">
+        <span class="page-footer__left-span">Мы есть в Вконтакте</span>
+        <a href="https://vk.com/takara.pskov" class="page-footer__left-vk">
+          <img class="page-footer__left-vk-img" src="img/footer/vk.png" alt="vkontakte">
+        </a>
+      </div>
+    </div>
+    <nav class="page-footer__nav">
+      <ul class="page-footer__nav-list">
+        <li class="page-footer__nav-item">
+          <a class="page-footer__nav-link" href="index.html">Главная</a>
+        </li>
+        <li class="page-footer__nav-item">
+          <a class="page-footer__nav-link" href="sales.html">Акции</a>
+        </li>
+        <li class="page-footer__nav-item">
+          <a class="page-footer__nav-link" href="delivery.html">Доставка</a>
+        </li>
+        <li class="page-footer__nav-item">
+          <a class="page-footer__nav-link" href="menu.html">Меню</a>
+        </li>
+        <li class="page-footer__nav-item hidden-item">
+          <a class="page-footer__nav-link" href="about.html">О нас</a>
+        </li>
+        <li class="page-footer__nav-item">
+          <a class="page-footer__nav-link" href="contacts.html">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="page-footer__contacts footer-contacts">
+      <ul class="footer-contacts__list">
+        <li class="footer-contacts__item">
+          <p class="footer-contacts__item-title">ул. Западная, 16 Б</p>
+          <div class="footer-contacts__item-txt">
+            <p class="footer-contacts__item-delivery">На вынос
+              <a href="tel:612-001" class="footer-contacts__item-delivery-tel">
+                <i class="fas fa-phone"></i> 612 - 001
+              </a>
+            </p>
+            <p class="footer-contacts__item-orders">Приём заказов
+              <a href="tel:602-067" class="footer-contacts__item-orders-tel">
+                <i class="fas fa-phone"></i> 602 - 067
+              </a>
+            </p>
+          </div>
+        </li>
+        <li class="footer-contacts__item">
+          <p class="footer-contacts__item-title">пр. Октябрьский, 19А</p>
+          <div class="footer-contacts__item-txt">
+            <p class="footer-contacts__item-delivery">На вынос
+              <a href="tel:612-011" class="footer-contacts__item-delivery-tel">
+                <i class="fas fa-phone"></i> 612 - 011
+              </a>
+            </p>
+            <p class="footer-contacts__item-orders">Приём заказов
+              <a href="tel:602-229" class="footer-contacts__item-orders-tel">
+                <i class="fas fa-phone"></i> 602 - 229
+              </a>
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script src="js/utils.js"></script>
+<script src="js/header.js"></script>
+<script src="js/noodles.js"></script>
+</body>
+</html>

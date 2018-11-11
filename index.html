@@ -5,512 +5,520 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="stylesheet" href="css/swiper.css">
   <title>Takara</title>
 </head>
 
 <body>
-  <header class="page-header">
-    <div class="page-header__wrapper wrapper">
-      <div class="page-header__vertical-menu">
-        <button class="page-header__vertical-button button" type="button" title="Открыть меню">
-          <i class="fas fa-bars"></i>
-          <i class="fas fa-times"></i>
-        </button>
-        <div class="page-header__vertical-menu-content">
-          <h3 class="page-header__vertical-title">Меню</h3>
-          <ul class="page-header__vertical-list">
-            <li class="page-header__vertical-item">
-              <a href="#" class="page-header__vertical-link">Суши</a>
-            </li>
-            <li class="page-header__vertical-item">
-              <a href="#" class="page-header__vertical-link">Роллы</a>
-            </li>
-            <li class="page-header__vertical-item">
-              <a href="#" class="page-header__vertical-link">Запечённые роллы</a>
-            </li>
-            <li class="page-header__vertical-item">
-              <a href="#" class="page-header__vertical-link">Наборы</a>
-            </li>
-            <li class="page-header__vertical-item">
-              <a href="#" class="page-header__vertical-link">Пицца</a>
-            </li>
-            <li class="page-header__vertical-item">
-              <a href="#" class="page-header__vertical-link">Лапша WOK</a>
-            </li>
-            <li class="page-header__vertical-item">
-              <a href="#" class="page-header__vertical-link">Супы</a>
-            </li>
-            <li class="page-header__vertical-item">
-              <a href="#" class="page-header__vertical-link">Бизнес ланчи</a>
-            </li>
-            <li class="page-header__vertical-item">
-              <a href="#" class="page-header__vertical-link">Салаты и закуски</a>
-            </li>
-            <li class="page-header__vertical-item">
-              <a href="#" class="page-header__vertical-link">Десерты</a>
-            </li>
-            <li class="page-header__vertical-item">
-              <a href="#" class="page-header__vertical-link">Напитки</a>
-            </li>
-          </ul>
-          <ul class="page-header__vertical-list">
-            <li class="page-header__vertical-item">
-              <a href="#" class="page-header__vertical-link">Акции</a>
-            </li>
-            <li class="page-header__vertical-item">
-              <a href="#" class="page-header__vertical-link">О нас</a>
-            </li>
-            <li class="page-header__vertical-item">
-              <a href="#" class="page-header__vertical-link">Доставка</a>
-            </li>
-            <li class="page-header__vertical-item">
-              <a href="#" class="page-header__vertical-link">Контакты</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <a class="page-header__logo">
-        <picture>
-          <source media="(max-width: 767px)" srcset="img/logo-min.png">
-          <img class="page-header__logo-image" src="img/logo.png" width="116" height="92" alt="Takara 'Готовим с душой соблюдаем традиции'">
-        </picture>
-      </a>
-      <div class="page-header__center-container">
-        <p class="page-header__cart-info">Прием заказов с 11:00 до 23:00</p>
-        <div class="page-header__cart-wrapper">
-          <div class="page-header__cart-top">
-            <a href="#" class="page-header__cart-link button">Корзина</a>
-            <div class="page-header__cart-top-button-wrapper">
-              <a href="#" class="page-header__cart-button" title="Открыть корзину">
-                <i class="fas fa-shopping-bag"></i>
-                <span class="goods-item">1</span>
-              </a>
-              <p class="page-header__cart-top-total-price">
-                <span class="goods-total-price-value">489</span>
-                <i class="fas fa-ruble-sign"></i>
-              </p>
-              <button class="page-header__cart-top-item button">
-                <span class="page-header__cart-top-item-goods goods-item">1</span>
-                <span> товар</span>
-                <i class="fas fa-angle-down"></i>
-              </button>
-            </div>
-          </div>
-          <form class="page-header__cart-form goods-form" action="/" method="post">
-            <h3 class="page-header__cart-form-title">Корзина</h3>
-            <ol class="page-header__cart-list">
-              <li class="page-header__cart-item goods-container">
-                <div class="page-header__cart-title-wrapper">
-                  <a href="#" class="page-header__cart-title">Набор “Ямато”</a>
-                  <button class="button goods-delete" type="button" title="Удалить">
-                    <i class="fas fa-times"></i>
-                  </button>
-                </div>
-                <div class="page-header__cart-input-wrapper">
-                  <div class="page-header__cart-input-inner">
-                    <button class="page-header__cart-amount page-header__cart-amount--subtraction button goods-subtraction"
-                      type="button" title="Уменьшить количество">
-                      <span>-</span>
-                    </button>
-                    <label class="page-header__cart-label">
-                      <input class="page-header__cart-input goods-input" name="Калифорния креветка" type="number" value="1"
-                        min="1" max="100" title="Количество">
-                    </label>
-                    <button class="page-header__cart-amount page-header__cart-amount--addition button goods-addition"
-                      type="button" title="Увеличить количество">
-                      <span>+</span>
-                    </button>
-                  </div>
-                  <div class="page-header__cart-item-price">
-                    <span class="goods-price-value" data-price="489">489</span>
-                    <span class="page-header__cart-sign">руб.</span>
-                    <i class="fas fa-ruble-sign"></i>
-                  </div>
-                </div>
-              </li>
-              <li class="page-header__cart-item goods-container">
-                <div class="page-header__cart-title-wrapper">
-                  <a href="#" class="page-header__cart-title">Запечённые</a>
-                  <button class="button goods-delete" type="button" title="Удалить">
-                    <i class="fas fa-times"></i>
-                  </button>
-                </div>
-                <div class="page-header__cart-input-wrapper">
-                  <div class="page-header__cart-input-inner">
-                    <button class="page-header__cart-amount page-header__cart-amount--subtraction button goods-subtraction"
-                      type="button" title="Уменьшить количество">
-                      <span>-</span>
-                    </button>
-                    <label class="page-header__cart-label">
-                      <input class="page-header__cart-input goods-input" name="Калифорния креветка" type="number" value="1"
-                        min="1" max="100" title="Количество">
-                    </label>
-                    <button class="page-header__cart-amount page-header__cart-amount--addition button goods-addition"
-                      type="button" title="Увеличить количество">
-                      <span>+</span>
-                    </button>
-                  </div>
-                  <div class="page-header__cart-item-price">
-                    <span class="goods-price-value" data-price="65">65</span>
-                    <span class="page-header__cart-sign">руб.</span>
-                    <i class="fas fa-ruble-sign"></i>
-                  </div>
-                </div>
-              </li>
-            </ol>
-            <div class="page-header__cart-total-price-wrapper">
-              <div class="page-header__cart-total-price-text">
-                <span>Сумма</span><span> заказа</span>:
-              </div>
-              <div class="page-header__cart-total-price goods-total-price">
-                <span class="goods-total-price-value">489</span>
-                <span class="page-header__cart-sign">руб.</span>
-                <i class="fas fa-ruble-sign"></i>
-              </div>
-            </div>
-            <button class="page-header__cart-submit-button button" type="submit">Оформить</button>
-          </form>
-        </div>
-        <ul class="page-header__center-list">
-          <li class="page-header__center-item">
-            <a href="#" class="page-header__center-link">Главная</a>
+<header class="page-header">
+  <div class="page-header__wrapper wrapper">
+    <div class="page-header__vertical-menu">
+      <button class="page-header__vertical-button button" type="button" title="Открыть меню">
+        <i class="fas fa-bars"></i>
+        <i class="fas fa-times"></i>
+      </button>
+      <div class="page-header__vertical-menu-content">
+        <h3 class="page-header__vertical-title">Меню</h3>
+        <ul class="page-header__vertical-list">
+          <li class="page-header__vertical-item">
+            <a href="#" class="page-header__vertical-link">Суши</a>
           </li>
-          <li class="page-header__center-item">
-            <a href="#" class="page-header__center-link">Акции</a>
+          <li class="page-header__vertical-item">
+            <a href="#" class="page-header__vertical-link">Роллы</a>
           </li>
-          <li class="page-header__center-item">
-            <a href="#" class="page-header__center-link">Доставка</a>
+          <li class="page-header__vertical-item">
+            <a href="#" class="page-header__vertical-link">Запечённые роллы</a>
           </li>
-          <li class="page-header__center-item">
-            <a href="#" class="page-header__center-link">Меню</a>
+          <li class="page-header__vertical-item">
+            <a href="#" class="page-header__vertical-link">Наборы</a>
           </li>
-          <li class="page-header__center-item">
-            <a href="#" class="page-header__center-link">Контакты</a>
+          <li class="page-header__vertical-item">
+            <a href="#" class="page-header__vertical-link">Пицца</a>
+          </li>
+          <li class="page-header__vertical-item">
+            <a href="#" class="page-header__vertical-link">Лапша WOK</a>
+          </li>
+          <li class="page-header__vertical-item">
+            <a href="#" class="page-header__vertical-link">Супы</a>
+          </li>
+          <li class="page-header__vertical-item">
+            <a href="#" class="page-header__vertical-link">Бизнес ланчи</a>
+          </li>
+          <li class="page-header__vertical-item">
+            <a href="#" class="page-header__vertical-link">Салаты и закуски</a>
+          </li>
+          <li class="page-header__vertical-item">
+            <a href="#" class="page-header__vertical-link">Десерты</a>
+          </li>
+          <li class="page-header__vertical-item">
+            <a href="#" class="page-header__vertical-link">Напитки</a>
           </li>
         </ul>
-      </div>
-      <div class="page-header__right-container">
-        <button class="page-header__right-button button" type="button" title="Открыть контакты">
-          <i class="fas fa-phone"></i>
-          <i class="fas fa-angle-down"></i>
-        </button>
-        <ul class="page-header__right-list">
-          <li class="page-header__right-item">
-            <p class="page-header__right-address">ул. Западная, 16 Б</p>
-            <p class="page-header__right-phone">
-              На вынос
-              <a href="tel:612 - 001">
-                <i class="fas fa-phone"></i>
-                <strong>612 - 001</strong>
-              </a>
-            </p>
-            <p class="page-header__right-phone">Приём заказов
-              <a href="tel:602 - 067">
-                <i class="fas fa-phone"></i>
-                <strong>602 - 067</strong>
-              </a>
+        <ul class="page-header__vertical-list">
+          <li class="page-header__vertical-item">
+            <a href="#" class="page-header__vertical-link">Акции</a>
           </li>
-          <li class="page-header__right-item">
-            <p class="page-header__right-address">пр. Октябрьский, 19А</p>
-            <p class="page-header__right-phone">На вынос
-              <a href="tel:612 - 011">
-                <i class="fas fa-phone"></i>
-                <strong>612 - 011</strong>
-              </a>
-              <p class="page-header__right-phone">Приём заказов
-                <a href="tel:602 - 229">
-                  <i class="fas fa-phone"></i>
-                  <strong>602 - 229</strong>
-                </a>
+          <li class="page-header__vertical-item">
+            <a href="#" class="page-header__vertical-link">О нас</a>
+          </li>
+          <li class="page-header__vertical-item">
+            <a href="#" class="page-header__vertical-link">Доставка</a>
+          </li>
+          <li class="page-header__vertical-item">
+            <a href="#" class="page-header__vertical-link">Контакты</a>
           </li>
         </ul>
       </div>
     </div>
-  </header>
-
-  <main>
-    <section class="slider swiper-container">
-      <ul class="swiper-wrapper">
-        <li class="swiper-slide slider">
-          <picture>
-            <source media="(max-width: 767px)" srcset="img/slider/pizza-mob.png">
-            <img src="img/slider/pizza.png" class="swiper-slide__pizza" alt="pizza">
-          </picture>
-          <picture>
-            <source media="(max-width: 767px)" srcset="img/slider/10-mob.png">
-            <img src="img/slider/10.png" class="swiper-slide__10" alt="10%">
-          </picture>
-          <picture>
-            <source media="(max-width: 767px)" srcset="img/slider/rolls-mob.png">
-            <img src="img/slider/rolls.png" class="swiper-slide__rolls" alt="rolls">
-          </picture>
-        </li>
-        <li class="swiper-slide slider">
-          <picture>
-            <source media="(max-width: 767px)" srcset="img/slider/pizza-mob.png">
-            <img src="img/slider/pizza.png" class="swiper-slide__pizza" alt="pizza">
-          </picture>
-          <picture>
-            <source media="(max-width: 767px)" srcset="img/slider/10-mob.png">
-            <img src="img/slider/10.png" class="swiper-slide__10" alt="10%">
-          </picture>
-          <picture>
-            <source media="(max-width: 767px)" srcset="img/slider/rolls-mob.png">
-            <img src="img/slider/rolls.png" class="swiper-slide__rolls" alt="rolls">
-          </picture>
-        </li>
-        <li class="swiper-slide slider">
-          <picture>
-            <source media="(max-width: 767px)" srcset="img/slider/pizza-mob.png">
-            <img src="img/slider/pizza.png" class="swiper-slide__pizza" alt="pizza">
-          </picture>
-          <picture>
-            <source media="(max-width: 767px)" srcset="img/slider/10-mob.png">
-            <img src="img/slider/10.png" class="swiper-slide__10" alt="10%">
-          </picture>
-          <picture>
-            <source media="(max-width: 767px)" srcset="img/slider/rolls-mob.png">
-            <img src="img/slider/rolls.png" class="swiper-slide__rolls" alt="rolls">
-          </picture>
-        </li>
-        <li class="swiper-slide slider">
-          <picture>
-            <source media="(max-width: 767px)" srcset="img/slider/pizza-mob.png">
-            <img src="img/slider/pizza.png" class="swiper-slide__pizza" alt="pizza">
-          </picture>
-          <picture>
-            <source media="(max-width: 767px)" srcset="img/slider/10-mob.png">
-            <img src="img/slider/10.png" class="swiper-slide__10" alt="10%">
-          </picture>
-          <picture>
-            <source media="(max-width: 767px)" srcset="img/slider/rolls-mob.png">
-            <img src="img/slider/rolls.png" class="swiper-slide__rolls" alt="rolls">
-          </picture>
-        </li>
-      </ul>
-      <div class="swiper-pagination"></div>
-      <div class="swiper-button-next slide-next">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px"
-          y="0px" viewBox="0 0 22.062 22.062" style="enable-background:new 0 0 22.062 22.062;" xml:space="preserve"
-          width="28px" height="39px">
-          <g>
-            <path d="M10.544,11.031l6.742-6.742c0.81-0.809,0.81-2.135,0-2.944l-0.737-0.737   c-0.81-0.811-2.135-0.811-2.945,0L4.769,9.443c-0.435,0.434-0.628,1.017-0.597,1.589c-0.031,0.571,0.162,1.154,0.597,1.588   l8.835,8.834c0.81,0.811,2.135,0.811,2.945,0l0.737-0.737c0.81-0.808,0.81-2.134,0-2.943L10.544,11.031z" />
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-        </svg>
-      </div>
-      <div class="swiper-button-prev slide-prev">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px"
-          y="0px" viewBox="0 0 22.062 22.062" style="enable-background:new 0 0 22.062 22.062;" xml:space="preserve"
-          width="28px" height="39px">
-          <g>
-            <path d="M10.544,11.031l6.742-6.742c0.81-0.809,0.81-2.135,0-2.944l-0.737-0.737   c-0.81-0.811-2.135-0.811-2.945,0L4.769,9.443c-0.435,0.434-0.628,1.017-0.597,1.589c-0.031,0.571,0.162,1.154,0.597,1.588   l8.835,8.834c0.81,0.811,2.135,0.811,2.945,0l0.737-0.737c0.81-0.808,0.81-2.134,0-2.943L10.544,11.031z" />
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-          <g>
-          </g>
-        </svg>
-      </div>
-    </section>
-    <section class="catalog">
-      <ul class="catalog-list">
-        <li class="catalog-list__item">
-          <a href="components.html" class="catalog-list__link">
-            <img src="" class="catalog-list__item-img" alt="catalog-item">
-            <p class="catalog-list__item-title">Суши</p>
-          </a>
-        </li>
-      </ul>
-    </section>
-    <section class="popular">
-      <ul class="popular-list">
-        <li class="popular-list__item">
-          <img src="" class="popular-list__item-img" alt="popular">
-          <h4 class="popular-list__item-title"></h4>
-          <p class="popular-list__item-txt"></p>
-          <footer class="popular-list__item-footer">
-            <p class="popular-list__item-price">
-              <span></span>
+    <a class="page-header__logo">
+      <picture>
+        <source media="(max-width: 767px)" srcset="img/logo-min.png">
+        <img class="page-header__logo-image" src="img/logo.png" width="116" height="92"
+             alt="Takara 'Готовим с душой соблюдаем традиции'">
+      </picture>
+    </a>
+    <div class="page-header__center-container">
+      <p class="page-header__cart-info">Прием заказов с 11:00 до 23:00</p>
+      <div class="page-header__cart-wrapper">
+        <div class="page-header__cart-top">
+          <a href="#" class="page-header__cart-link button">Корзина</a>
+          <div class="page-header__cart-top-button-wrapper">
+            <a href="#" class="page-header__cart-button" title="Открыть корзину">
+              <i class="fas fa-shopping-bag"></i>
+              <span class="goods-item">1</span>
+            </a>
+            <p class="page-header__cart-top-total-price">
+              <span class="goods-total-price-value">489</span>
+              <i class="fas fa-ruble-sign"></i>
             </p>
-            <button type="button" class="popular-list__item-btn">В корзину</button>
-          </footer>
+            <button class="page-header__cart-top-item button">
+              <span class="page-header__cart-top-item-goods goods-item">1</span>
+              <span> товар</span>
+              <i class="fas fa-angle-down"></i>
+            </button>
+          </div>
+        </div>
+        <form class="page-header__cart-form goods-form" action="/" method="post">
+          <h3 class="page-header__cart-form-title">Корзина</h3>
+          <ol class="page-header__cart-list">
+            <li class="page-header__cart-item goods-container">
+              <div class="page-header__cart-title-wrapper">
+                <a href="#" class="page-header__cart-title">Набор “Ямато”</a>
+                <button class="button goods-delete" type="button" title="Удалить">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+              <div class="page-header__cart-input-wrapper">
+                <div class="page-header__cart-input-inner">
+                  <button
+                    class="page-header__cart-amount page-header__cart-amount--subtraction button goods-subtraction"
+                    type="button"
+                    title="Уменьшить количество">
+                    <span>-</span>
+                  </button>
+                  <label class="page-header__cart-label">
+                    <input class="page-header__cart-input goods-input" name="Калифорния креветка" type="number"
+                           value="1" min="1" max="100"
+                           title="Количество">
+                  </label>
+                  <button class="page-header__cart-amount page-header__cart-amount--addition button goods-addition"
+                          type="button"
+                          title="Увеличить количество">
+                    <span>+</span>
+                  </button>
+                </div>
+                <div class="page-header__cart-item-price">
+                  <span class="goods-price-value" data-price="489">489</span>
+                  <span class="page-header__cart-sign">руб.</span>
+                  <i class="fas fa-ruble-sign"></i>
+                </div>
+              </div>
+            </li>
+            <li class="page-header__cart-item goods-container">
+              <div class="page-header__cart-title-wrapper">
+                <a href="#" class="page-header__cart-title">Запечённые</a>
+                <button class="button goods-delete" type="button" title="Удалить">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+              <div class="page-header__cart-input-wrapper">
+                <div class="page-header__cart-input-inner">
+                  <button
+                    class="page-header__cart-amount page-header__cart-amount--subtraction button goods-subtraction"
+                    type="button"
+                    title="Уменьшить количество">
+                    <span>-</span>
+                  </button>
+                  <label class="page-header__cart-label">
+                    <input class="page-header__cart-input goods-input" name="Калифорния креветка" type="number"
+                           value="1" min="1" max="100"
+                           title="Количество">
+                  </label>
+                  <button class="page-header__cart-amount page-header__cart-amount--addition button goods-addition"
+                          type="button"
+                          title="Увеличить количество">
+                    <span>+</span>
+                  </button>
+                </div>
+                <div class="page-header__cart-item-price">
+                  <span class="goods-price-value" data-price="65">65</span>
+                  <span class="page-header__cart-sign">руб.</span>
+                  <i class="fas fa-ruble-sign"></i>
+                </div>
+              </div>
+            </li>
+          </ol>
+          <div class="page-header__cart-total-price-wrapper">
+            <div class="page-header__cart-total-price-text">
+              <span>Сумма</span><span> заказа</span>:
+            </div>
+            <div class="page-header__cart-total-price goods-total-price">
+              <span class="goods-total-price-value">489</span>
+              <span class="page-header__cart-sign">руб.</span>
+              <i class="fas fa-ruble-sign"></i>
+            </div>
+          </div>
+          <button class="page-header__cart-submit-button button" type="submit">Оформить</button>
+        </form>
+      </div>
+      <ul class="page-header__center-list">
+        <li class="page-header__center-item">
+          <a href="#" class="page-header__center-link">Главная</a>
+        </li>
+        <li class="page-header__center-item">
+          <a href="#" class="page-header__center-link">Акции</a>
+        </li>
+        <li class="page-header__center-item">
+          <a href="#" class="page-header__center-link">Доставка</a>
+        </li>
+        <li class="page-header__center-item">
+          <a href="#" class="page-header__center-link">Меню</a>
+        </li>
+        <li class="page-header__center-item">
+          <a href="#" class="page-header__center-link">Контакты</a>
         </li>
       </ul>
-    </section>
-    <section class="about">
-      <div class="about-textblock">
-        <h2 class="about-textblock__title">Суши - бары и доставка суши в г. Пскове</h2>
-        <p class="about-textblock__slim">
+    </div>
+    <div class="page-header__right-container">
+      <button class="page-header__right-button button" type="button" title="Открыть контакты">
+        <i class="fas fa-phone"></i>
+        <i class="fas fa-angle-down"></i>
+      </button>
+      <ul class="page-header__right-list">
+        <li class="page-header__right-item">
+          <p class="page-header__right-address">ул. Западная, 16 Б</p>
+          <p class="page-header__right-phone">
+            На вынос
+            <a href="tel:612 - 001">
+              <i class="fas fa-phone"></i>
+              <strong>612 - 001</strong>
+            </a>
+          </p>
+          <p class="page-header__right-phone">Приём заказов
+            <a href="tel:602 - 067">
+              <i class="fas fa-phone"></i>
+              <strong>602 - 067</strong>
+            </a>
+        </li>
+        <li class="page-header__right-item">
+          <p class="page-header__right-address">пр. Октябрьский, 19А</p>
+          <p class="page-header__right-phone">На вынос
+            <a href="tel:612 - 011">
+              <i class="fas fa-phone"></i>
+              <strong>612 - 011</strong>
+            </a>
+          <p class="page-header__right-phone">Приём заказов
+            <a href="tel:602 - 229">
+              <i class="fas fa-phone"></i>
+              <strong>602 - 229</strong>
+            </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<main class="page-main">
+  <section class="slider swiper-container">
+    <ul class="swiper-wrapper">
+      <li class="swiper-slide slider">
+        <picture>
+          <source media="(max-width: 767px)" srcset="img/slider/pizza-mob.png">
+          <img src="img/slider/pizza.png" class="swiper-slide__pizza" alt="pizza">
+        </picture>
+        <picture>
+          <source media="(max-width: 767px)" srcset="img/slider/10-mob.png">
+          <img src="img/slider/10.png" class="swiper-slide__10" alt="10%">
+        </picture>
+        <picture>
+          <source media="(max-width: 767px)" srcset="img/slider/rolls-mob.png">
+          <img src="img/slider/rolls.png" class="swiper-slide__rolls" alt="rolls">
+        </picture>
+      </li>
+      <li class="swiper-slide slider">
+        <picture>
+          <source media="(max-width: 767px)" srcset="img/slider/pizza-mob.png">
+          <img src="img/slider/pizza.png" class="swiper-slide__pizza" alt="pizza">
+        </picture>
+        <picture>
+          <source media="(max-width: 767px)" srcset="img/slider/10-mob.png">
+          <img src="img/slider/10.png" class="swiper-slide__10" alt="10%">
+        </picture>
+        <picture>
+          <source media="(max-width: 767px)" srcset="img/slider/rolls-mob.png">
+          <img src="img/slider/rolls.png" class="swiper-slide__rolls" alt="rolls">
+        </picture>
+      </li>
+      <li class="swiper-slide slider">
+        <picture>
+          <source media="(max-width: 767px)" srcset="img/slider/pizza-mob.png">
+          <img src="img/slider/pizza.png" class="swiper-slide__pizza" alt="pizza">
+        </picture>
+        <picture>
+          <source media="(max-width: 767px)" srcset="img/slider/10-mob.png">
+          <img src="img/slider/10.png" class="swiper-slide__10" alt="10%">
+        </picture>
+        <picture>
+          <source media="(max-width: 767px)" srcset="img/slider/rolls-mob.png">
+          <img src="img/slider/rolls.png" class="swiper-slide__rolls" alt="rolls">
+        </picture>
+      </li>
+      <li class="swiper-slide slider">
+        <picture>
+          <source media="(max-width: 767px)" srcset="img/slider/pizza-mob.png">
+          <img src="img/slider/pizza.png" class="swiper-slide__pizza" alt="pizza">
+        </picture>
+        <picture>
+          <source media="(max-width: 767px)" srcset="img/slider/10-mob.png">
+          <img src="img/slider/10.png" class="swiper-slide__10" alt="10%">
+        </picture>
+        <picture>
+          <source media="(max-width: 767px)" srcset="img/slider/rolls-mob.png">
+          <img src="img/slider/rolls.png" class="swiper-slide__rolls" alt="rolls">
+        </picture>
+      </li>
+    </ul>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next slide-next">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1" id="Capa_1" x="0px"
+          y="0px" viewBox="0 0 22.062 22.062" style="enable-background:new 0 0 22.062 22.062;" xml:space="preserve"
+          width="28px" height="39px">
+          <g>
+            <path d="M10.544,11.031l6.742-6.742c0.81-0.809,0.81-2.135,0-2.944l-0.737-0.737   c-0.81-0.811-2.135-0.811-2.945,0L4.769,9.443c-0.435,0.434-0.628,1.017-0.597,1.589c-0.031,0.571,0.162,1.154,0.597,1.588   l8.835,8.834c0.81,0.811,2.135,0.811,2.945,0l0.737-0.737c0.81-0.808,0.81-2.134,0-2.943L10.544,11.031z" />
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+        </svg>
+    </div>
+    <div class="swiper-button-prev slide-prev">
+      <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" version="1.1" id="Capa_1" x="0px"
+          y="0px" viewBox="0 0 22.062 22.062" style="enable-background:new 0 0 22.062 22.062;" xml:space="preserve"
+          width="28px" height="39px">
+          <g>
+            <path d="M10.544,11.031l6.742-6.742c0.81-0.809,0.81-2.135,0-2.944l-0.737-0.737   c-0.81-0.811-2.135-0.811-2.945,0L4.769,9.443c-0.435,0.434-0.628,1.017-0.597,1.589c-0.031,0.571,0.162,1.154,0.597,1.588   l8.835,8.834c0.81,0.811,2.135,0.811,2.945,0l0.737-0.737c0.81-0.808,0.81-2.134,0-2.943L10.544,11.031z" />
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+        </svg>
+    </div>
+  </section>
+  <section class="catalog">
+    <ul class="catalog-list">
+      <li class="catalog-list__item">
+        <a href="components.html" class="catalog-list__link">
+          <img src="" class="catalog-list__item-img" alt="catalog-item">
+          <p class="catalog-list__item-title">Суши</p>
+        </a>
+      </li>
+    </ul>
+  </section>
+  <section class="popular">
+    <ul class="popular-list">
+      <li class="popular-list__item">
+        <img src="" class="popular-list__item-img" alt="popular">
+        <h4 class="popular-list__item-title"></h4>
+        <p class="popular-list__item-txt"></p>
+        <footer class="popular-list__item-footer">
+          <p class="popular-list__item-price">
+            <span></span>
+          </p>
+          <button type="button" class="popular-list__item-btn">В корзину</button>
+        </footer>
+      </li>
+    </ul>
+  </section>
+  <section class="about">
+    <div class="about-textblock">
+      <h2 class="about-textblock__title">Суши - бары и доставка суши в г. Пскове</h2>
+      <p class="about-textblock__slim">
           <span>
               Японская кухня – это не только огромное количество оригинальных блюд, но и строгое соблюдение древних традиций страны Восходящего солнца. Она отличается такой особенностью, как минимальная обработка исключительно натуральных продуктов, а также в ней широко применяются морепродукты.
           </span>
-          <span>
+        <span>
               Японская кухня, как ни одна другая, характеризуется сезонностью, застольным этикетом, своеобразной сервировкой и специфическими правилами в оформлении блюд. При соблюдении всех этих нюансов можно окунуться в особую атмосферу, которая царит в нашем суши-баре «Такара», предлагающих такие блюда.
           </span>
-          <span>
+        <span>
               Суши-бар «Такара» в Пскове приглашает всех гурманов и истинных ценителей вкуса. Если вы хотите прожить такую же долгую жизнь, как и жители страны Восходящего солнца, тогда добро пожаловать к нам. Японские блюда позволят вам изменить не только ежедневный рацион, но и привнести в свою жизнь иное представление о гастрономическом удовольствии. Вы спросите, вероятно: почему лучше отдать предпочтение японской кухне, а не какой-либо другой? Ответ очень прост – морепродукты и рыба очень богаты всеми необходимыми веществами для организма, овощи и рис дарят здоровье, а специи и пряности обычным блюдам придают утонченный и оригинальный вкус. Эта кухня отличается своей невероятной полезностью, что и делает ее такой популярной среди россиян в настоящее время.
           </span>
-        </p>
-        <p class="about-textblock__wide">
+      </p>
+      <p class="about-textblock__wide">
           <span>
               Так же нашим баром-рестораном осуществляется доставка суши в Пскове. Заказать доставку вы можете позвонив нам по телефону 60-22-29 или 60-20-67.
               В нашем суши баре вы откроете для себя многообразие необычных блюд, которые к тому же благотворно влияют на здоровье. Обращайтесь в наш ресторан «Такара», где вся еда всегда высшего качества и по приемлемой цене.
           </span>
-          <span>
+        <span>
               Наши контакты: городские номера 60-22-29 или 60-20-67, по ним вы можете сделать свой заказ с 11.00 до 23.00 или же посетить в эти часы наше заведение лично и насладиться незабываемым вкусом оригинальных японских блюд.
           </span>
-        </p>
-      </div>
-      <div class="about-logo">
-        <img class="about-logo__img" src="img/logo.png" alt="takara">
-      </div>
-    </section>
-    <section class="notices">
-      <p class="notices-txt">
-          Суши-бар по адресу: пл. Ленина 3 переехал на Октябрьский пр. 19А. (Вход со стороны кинотеатра "Победа")
       </p>
-    </section>
-  </main>
+    </div>
+    <div class="about-logo">
+      <img class="about-logo__img" src="img/logo.png" alt="takara">
+    </div>
+  </section>
+  <section class="notices">
+    <p class="notices-txt">
+      Суши-бар по адресу: пл. Ленина 3 переехал на Октябрьский пр. 19А. (Вход со стороны кинотеатра "Победа")
+    </p>
+  </section>
+</main>
 
-  <footer class="page-footer">
-    <div class="page-footer__wrapper wrapper">
-      <div class="page-footer__left">
-        <a href="index.html" class="page-footer__logo">
-          <picture>
-            <source media="(max-width: 767px)" srcset="img/footer/logo-mobile.png">
-            <img class="page-footer__logo-img" src="img/footer/logo.png" alt="logo" width="116">
-          </picture>
+<footer class="page-footer">
+  <div class="page-footer__wrapper wrapper">
+    <div class="page-footer__left">
+      <a href="index.html" class="page-footer__logo">
+        <picture>
+          <source media="(max-width: 767px)" srcset="img/footer/logo-mobile.png">
+          <img class="page-footer__logo-img" src="img/footer/logo.png" alt="logo" width="116">
+        </picture>
+      </a>
+      <p class="page-footer__left-copyright">
+        © ТАКАРА - Суши-бары и служба доставки,<br> г. Псков, 2011 - 2018.
+      </p>
+      <div class="page-footer__left-social">
+        <span class="page-footer__left-span">Мы есть в Вконтакте</span>
+        <a href="https://vk.com/takara.pskov" class="page-footer__left-vk">
+          <img class="page-footer__left-vk-img" src="img/footer/vk.png" alt="vkontakte">
         </a>
-        <p class="page-footer__left-copyright">
-          © ТАКАРА - Суши-бары и служба доставки,<br> г. Псков, 2011 - 2018.
-        </p>
-        <div class="page-footer__left-social">
-          <span class="page-footer__left-span">Мы есть в Вконтакте</span>
-          <a href="https://vk.com/takara.pskov" class="page-footer__left-vk">
-            <img class="page-footer__left-vk-img" src="img/footer/vk.png" alt="vkontakte">
-          </a>
-        </div>
-      </div>
-      <nav class="page-footer__nav">
-        <ul class="page-footer__nav-list">
-          <li class="page-footer__nav-item">
-            <a class="page-footer__nav-link" href="index.html">Главная</a>
-          </li>
-          <li class="page-footer__nav-item">
-            <a class="page-footer__nav-link" href="sales.html">Акции</a>
-          </li>
-          <li class="page-footer__nav-item">
-            <a class="page-footer__nav-link" href="delivery.html">Доставка</a>
-          </li>
-          <li class="page-footer__nav-item">
-            <a class="page-footer__nav-link" href="menu.html">Меню</a>
-          </li>
-          <li class="page-footer__nav-item hidden-item">
-            <a class="page-footer__nav-link" href="about.html">О нас</a>
-          </li>
-          <li class="page-footer__nav-item">
-            <a class="page-footer__nav-link" href="contacts.html">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="page-footer__contacts footer-contacts">
-        <ul class="footer-contacts__list">
-          <li class="footer-contacts__item">
-            <p class="footer-contacts__item-title">ул. Западная, 16 Б</p>
-            <div class="footer-contacts__item-txt">
-              <p class="footer-contacts__item-delivery">На вынос
-                <a href="tel:612-001" class="footer-contacts__item-delivery-tel">
-                  <i class="fas fa-phone"></i> 612 - 001
-                </a>
-              </p>
-              <p class="footer-contacts__item-orders">Приём заказов
-                <a href="tel:602-067" class="footer-contacts__item-orders-tel">
-                  <i class="fas fa-phone"></i> 602 - 067
-                </a>
-              </p>
-            </div>
-          </li>
-          <li class="footer-contacts__item">
-            <p class="footer-contacts__item-title">пр. Октябрьский, 19А</p>
-            <div class="footer-contacts__item-txt">
-              <p class="footer-contacts__item-delivery">На вынос
-                <a href="tel:612-011" class="footer-contacts__item-delivery-tel">
-                  <i class="fas fa-phone"></i> 612 - 011
-                </a>
-              </p>
-              <p class="footer-contacts__item-orders">Приём заказов
-                <a href="tel:602-229" class="footer-contacts__item-orders-tel">
-                  <i class="fas fa-phone"></i> 602 - 229
-                </a>
-              </p>
-            </div>
-          </li>
-        </ul>
       </div>
     </div>
-  </footer>
+    <nav class="page-footer__nav">
+      <ul class="page-footer__nav-list">
+        <li class="page-footer__nav-item">
+          <a class="page-footer__nav-link" href="index.html">Главная</a>
+        </li>
+        <li class="page-footer__nav-item">
+          <a class="page-footer__nav-link" href="sales.html">Акции</a>
+        </li>
+        <li class="page-footer__nav-item">
+          <a class="page-footer__nav-link" href="delivery.html">Доставка</a>
+        </li>
+        <li class="page-footer__nav-item">
+          <a class="page-footer__nav-link" href="menu.html">Меню</a>
+        </li>
+        <li class="page-footer__nav-item hidden-item">
+          <a class="page-footer__nav-link" href="about.html">О нас</a>
+        </li>
+        <li class="page-footer__nav-item">
+          <a class="page-footer__nav-link" href="contacts.html">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="page-footer__contacts footer-contacts">
+      <ul class="footer-contacts__list">
+        <li class="footer-contacts__item">
+          <p class="footer-contacts__item-title">ул. Западная, 16 Б</p>
+          <div class="footer-contacts__item-txt">
+            <p class="footer-contacts__item-delivery">На вынос
+              <a href="tel:612-001" class="footer-contacts__item-delivery-tel">
+                <i class="fas fa-phone"></i> 612 - 001
+              </a>
+            </p>
+            <p class="footer-contacts__item-orders">Приём заказов
+              <a href="tel:602-067" class="footer-contacts__item-orders-tel">
+                <i class="fas fa-phone"></i> 602 - 067
+              </a>
+            </p>
+          </div>
+        </li>
+        <li class="footer-contacts__item">
+          <p class="footer-contacts__item-title">пр. Октябрьский, 19А</p>
+          <div class="footer-contacts__item-txt">
+            <p class="footer-contacts__item-delivery">На вынос
+              <a href="tel:612-011" class="footer-contacts__item-delivery-tel">
+                <i class="fas fa-phone"></i> 612 - 011
+              </a>
+            </p>
+            <p class="footer-contacts__item-orders">Приём заказов
+              <a href="tel:602-229" class="footer-contacts__item-orders-tel">
+                <i class="fas fa-phone"></i> 602 - 229
+              </a>
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
 
-  <script src="js/utils.js"></script>
-  <script src="js/header.js"></script>
-  <script src="js/swiper.min.js"></script>
-  <script src="js/swiper.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/header.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/swiper.js"></script>
 </body>
 
 </html>
