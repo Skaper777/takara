@@ -5512,6 +5512,11 @@ input::-webkit-inner-spin-button {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
+@media (max-width: 768px) {
+  .slider svg {
+    width: 20px;
+  }
+}
 .slider svg:hover {
   fill: #ff0000;
 }
@@ -5524,6 +5529,7 @@ input::-webkit-inner-spin-button {
   width: inherit;
   height: 100%;
   background: url("../img/slider/back.jpg") no-repeat;
+  background-size: cover;
 }
 .slider-textblock {
   width: 631px;
@@ -5538,15 +5544,32 @@ input::-webkit-inner-spin-button {
   left: 23.5%;
   top: 16%;
 }
+@media (max-width: 768px) {
+  .swiper-slide__10 {
+    top: 10%;
+    width: 50%;
+    left: 10%;
+  }
+}
 .swiper-slide__pizza {
   width: 32%;
   position: absolute;
   left: 0;
   bottom: 0;
 }
+@media (max-width: 768px) {
+  .swiper-slide__pizza {
+    width: 190px;
+  }
+}
 .swiper-slide__rolls {
   width: 40%;
   position: absolute;
   right: 0;
   top: 0;
+}
+@media (max-width: 768px) {
+  .swiper-slide__rolls {
+    width: 200px;
+  }
 }
