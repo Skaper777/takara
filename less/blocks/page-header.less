@@ -1,11 +1,21 @@
 .page-header {
-  padding: 10px 0 18px;
+  position: relative;
   background: @white;
+
+  &--shagow {
+    box-shadow: 0 0 8.5px 1.5px rgba(226, 226, 226, 1);
+
+    .page-header__wrapper {
+      box-shadow: 10px 0 0 #fff, -10px 0 0 #fff, 0 0 8.5px 1.5px rgba(0, 0, 0, 0.05);
+    }
+  }
 }
 
 .page-header__wrapper {
   display: flex;
   align-items: center;
+  padding-top: 10px;
+  padding-bottom: 18px;
 }
 
 .page-header__vertical-menu {
@@ -584,6 +594,12 @@
   &:focus {
     color: @red;
     box-shadow: inset 0 -1px #fff, inset 0 -3px currentColor;
+  }
+
+  &--active {
+    color: @red;
+    box-shadow: inset 0 -1px #fff, inset 0 -3px currentColor;
+    cursor: auto;
   }
 }
 

@@ -1,0 +1,43 @@
+.breadcrumbs {
+  display: flex;
+  margin: 0 0 28px -12px;
+  padding-left: 70px;
+}
+
+.breadcrumbs__item {
+  position: relative;
+  margin-left: 12px;
+
+  &:not(:first-child) {
+    &::before {
+      content: "/";
+      position: absolute;
+      top: 0;
+      left: -8px;
+      color: @grey;
+    }
+  }
+
+  &:last-child {
+    &::before {
+      color: @black;
+    }
+  }
+}
+
+.breadcrumbs__link {
+  font-weight: 300;
+  color: @red;
+  text-decoration: underline;
+
+  &:hover,
+  &:focus {
+    color: @black;
+    text-decoration: none;
+  }
+
+  &--active {
+    color: @black;
+    text-decoration: none;
+  }
+}

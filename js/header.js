@@ -98,7 +98,6 @@
     Array.from(itemGoods).forEach(function (item) {
       item.textContent = totalValue;
     });
-
   };
 
   var getChangePriceValue = function (element, value, price) {
