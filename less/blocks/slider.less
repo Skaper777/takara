@@ -9,6 +9,10 @@
     fill: white;
     transition: 0.3s;
 
+    @media (max-width: @tablet) {
+      width: 20px;
+    }
+
     &:hover {
       fill: @red;
     }
@@ -26,6 +30,7 @@
   width: inherit;
   height: 100%;
   background: url("../img/slider/back.jpg") no-repeat;
+  background-size: cover;
 }
 
 .slider-textblock {
@@ -41,6 +46,12 @@
   position: absolute;
   left: 23.5%;
   top: 16%;
+
+  @media (max-width: @tablet) {
+    top: 10%;
+    width: 50%;
+    left: 10%;
+  }
 }
 
 .swiper-slide__pizza {
@@ -48,6 +59,10 @@
   position: absolute;
   left: 0;
   bottom: 0;
+
+  @media (max-width: @tablet) {
+    width: 190px;
+  }
 }
 
 .swiper-slide__rolls {
@@ -55,4 +70,8 @@
   position: absolute;
   right: 0;
   top: 0;
+
+  @media (max-width: @tablet) {
+    width: 200px;
+  }
 }
