@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/swiper.css">
   <title>Takara</title>
 </head>
 
@@ -212,8 +213,110 @@
 </header>
 
 <main>
-  <section>
-
+  <section class="slider swiper-container">
+    <ul class="swiper-wrapper">
+      <li class="swiper-slide slider">
+        <picture>
+          <source media="(max-width: 767px)" srcset="img/slider/pizza-mob.png">
+          <img src="img/slider/pizza.png" class="swiper-slide__pizza" alt="pizza">
+        </picture>
+        <img src="img/slider/10.png" class="swiper-slide__10" alt="10%">
+        <picture>
+          <source media="(max-width: 767px)" srcset="img/slider/rolls-mob.png">
+          <img src="img/slider/rolls.png" class="swiper-slide__rolls" alt="rolls">
+        </picture>
+      </li>
+      <li class="swiper-slide">
+        <img src="img/slider/pizza.png" class="swiper-slide__pizza" alt="pizza">
+        <img src="img/slider/10.png" class="swiper-slide__10" alt="10%">
+        <img src="img/slider/rolls.png" class="swiper-slide__rolls" alt="rolls">
+      </li>
+      <li class="swiper-slide">
+        <img src="img/slider/pizza.png" class="swiper-slide__pizza" alt="pizza">
+        <img src="img/slider/10.png" class="swiper-slide__10" alt="10%">
+        <img src="img/slider/rolls.png" class="swiper-slide__rolls" alt="rolls">
+      </li>
+      <li class="swiper-slide">
+        <img src="img/slider/pizza.png" class="swiper-slide__pizza" alt="pizza">
+        <img src="img/slider/10.png" class="swiper-slide__10" alt="10%">
+        <img src="img/slider/rolls.png" class="swiper-slide__rolls" alt="rolls">
+      </li>
+    </ul>
+    <div class="swiper-pagination"></div>
+    <div class="swiper-button-next">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 22.062 22.062" style="enable-background:new 0 0 22.062 22.062;" xml:space="preserve" width="28px" height="39px">
+        <g>
+          <path d="M10.544,11.031l6.742-6.742c0.81-0.809,0.81-2.135,0-2.944l-0.737-0.737   c-0.81-0.811-2.135-0.811-2.945,0L4.769,9.443c-0.435,0.434-0.628,1.017-0.597,1.589c-0.031,0.571,0.162,1.154,0.597,1.588   l8.835,8.834c0.81,0.811,2.135,0.811,2.945,0l0.737-0.737c0.81-0.808,0.81-2.134,0-2.943L10.544,11.031z"/>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        </svg>
+    </div>
+    <div class="swiper-button-prev">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 22.062 22.062" style="enable-background:new 0 0 22.062 22.062;" xml:space="preserve" width="28px" height="39px">
+        <g>
+          <path d="M10.544,11.031l6.742-6.742c0.81-0.809,0.81-2.135,0-2.944l-0.737-0.737   c-0.81-0.811-2.135-0.811-2.945,0L4.769,9.443c-0.435,0.434-0.628,1.017-0.597,1.589c-0.031,0.571,0.162,1.154,0.597,1.588   l8.835,8.834c0.81,0.811,2.135,0.811,2.945,0l0.737-0.737c0.81-0.808,0.81-2.134,0-2.943L10.544,11.031z"/>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        <g>
+        </g>
+        </svg>
+    </div>
   </section>
 </main>
 
@@ -222,7 +325,7 @@
     <div class="page-footer__left">
       <a href="index.html" class="page-footer__logo">
         <picture>
-          <source media="(max-width: 750px)" srcset="img/footer/logo-mobile.png">
+          <source media="(max-width: 767px)" srcset="img/footer/logo-mobile.png">
           <img class="page-footer__logo-img" src="img/footer/logo.png" alt="logo" width="116">
         </picture>
       </a>
@@ -289,6 +392,8 @@
 
 <script src="js/utils.js"></script>
 <script src="js/header.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/swiper.js"></script>
 </body>
 
 </html>

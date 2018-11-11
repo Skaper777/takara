@@ -1,0 +1,58 @@
+.slider {
+  height: 498px;
+
+  @media (max-width: @desktop) {
+    height: 285px;
+  }
+
+  svg {
+    fill: white;
+    transition: 0.3s;
+
+    &:hover {
+      fill: @red;
+    }
+  }
+
+  .swiper-button-next {
+    svg {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.swiper-slide {
+  position: relative;
+  width: inherit;
+  height: 100%;
+  background: url("../img/slider/back.jpg") no-repeat;
+}
+
+.slider-textblock {
+  width: 631px;
+  margin: 0;
+  margin-left: 23%;
+  margin-top: 70px;
+  color: white;
+}
+
+.swiper-slide__10 {
+  width: 32%;
+  position: absolute;
+  left: 23.5%;
+  top: 16%;
+}
+
+.swiper-slide__pizza {
+  width: 32%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.swiper-slide__rolls {
+  width: 40%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
