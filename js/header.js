@@ -1,23 +1,30 @@
 'use strict';
 
-// корзина в шапке
+// показать/скрыть меню корзины в шапке
 (function () {
   var container = document.querySelector('.page-header__cart-wrapper');
   var button = container.querySelector('.page-header__cart-top-item');
+  var buttonIcon = container.querySelector('.page-header__cart-button');
   var menu = container.querySelector('.page-header__cart-form');
 
-  button.addEventListener('click', function (evt) {
+  container.addEventListener('click', function (evt) {
     evt.preventDefault();
-    this.classList.toggle('page-header__cart-top-item--active');
-    menu.classList.toggle('page-header__cart-form--active');
-    container.classList.toggle('page-header__cart-wrapper--active');
+    var isButton = evt.target.closest('.page-header__cart-top-item') || evt.target.closest('.page-header__cart-button');
+    if (isButton) {
+      button.classList.toggle('page-header__cart-top-item--active');
+      buttonIcon.classList.toggle('page-header__cart-top-item--active');
+      menu.classList.toggle('page-header__cart-form--active');
+      container.classList.toggle('page-header__cart-wrapper--active');
 
-    if (this.classList.contains('page-header__cart-top-item--active')) {
-      this.title = 'Закрыть корзину';
-      document.addEventListener('keydown', modalEscPressHandler);
-    } else {
-      this.title = 'Открыть корзину';
-      document.removeEventListener('keydown', modalEscPressHandler);
+      if (button.classList.contains('page-header__cart-top-item--active')) {
+        button.title = 'Закрыть корзину';
+        buttonIcon.title = 'Закрыть корзину';
+        document.addEventListener('keydown', modalEscPressHandler);
+      } else {
+        button.title = 'Открыть корзину';
+        buttonIcon.title = 'Открыть корзину';
+        document.removeEventListener('keydown', modalEscPressHandler);
+      }
     }
   });
 
@@ -27,7 +34,9 @@
 
   var closeModal = function () {
     button.title = 'Открыть меню';
+    buttonIcon.title = 'Открыть меню';
     button.classList.remove('page-header__cart-top-item--active');
+    buttonIcon.classList.remove('page-header__cart-top-item--active');
     menu.classList.remove('page-header__cart-form--active');
     container.classList.remove('page-header__cart-wrapper--active');
     document.removeEventListener('keydown', modalEscPressHandler);
@@ -38,15 +47,14 @@
 (function () {
   var body = document.querySelector('body');
   var form = body.querySelector('.goods-form');
-  var itemGoods = body.querySelector('.page-header__cart-top-item-goods');
   var containers = form.querySelectorAll('.goods-container');
-  var totalPrice = body.querySelectorAll('.goods-total-price-value');
   var MIN_COUNT = 1;
   var MAX_COUNT = 100;
 
 
   var getTotalPrice = function () {
-    var price = document.querySelectorAll('.goods-price-value');
+    var price = body.querySelectorAll('.goods-price-value');
+    var totalPrice = body.querySelectorAll('.goods-total-price-value');
     var totalPriceValue;
     var totalPriceArray = [];
 
@@ -68,12 +76,15 @@
   };
 
   var getTotalGoods = function () {
-    var goods = document.querySelectorAll('.goods-input');
+    var goods = body.querySelectorAll('.goods-input');
+    var itemGoods = body.querySelectorAll('.goods-item');
     var totalValue;
     var totalValueArray = [];
 
     Array.from(goods).forEach(function (item) {
-      totalValueArray.push(parseInt(item.value, 10));
+      if (!isNaN(parseInt(item.value, 10))) {
+        totalValueArray.push(parseInt(item.value, 10));
+      }
     });
 
     if (totalValueArray.length !== 0) {
@@ -83,7 +94,11 @@
     } else {
       totalValue = 0;
     }
-    itemGoods.textContent = totalValue;
+
+    Array.from(itemGoods).forEach(function (item) {
+      item.textContent = totalValue;
+    });
+
   };
 
   var getChangePriceValue = function (element, value, price) {
@@ -136,4 +151,68 @@
     getTotalPrice();
     getTotalGoods();
   })
+})();
+
+// показать/скрыть контакты
+(function () {
+  var container = document.querySelector('.page-header__right-container');
+  var button = container.querySelector('.page-header__right-button');
+  var menu = container.querySelector('.page-header__right-list');
+
+  button.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    this.classList.toggle('page-header__right-button--active');
+    menu.classList.toggle('page-header__right-list--active');
+
+    if (this.classList.contains('page-header__right-button--active')) {
+      this.title = 'Закрыть контакты';
+      document.addEventListener('keydown', modalEscPressHandler);
+    } else {
+      this.title = 'Открыть контакты';
+      document.removeEventListener('keydown', modalEscPressHandler);
+    }
+  });
+
+  var modalEscPressHandler = function (evt) {
+    window.utils.escPressHandler(evt, closeModal);
+  };
+
+  var closeModal = function () {
+    button.title = 'Открыть контакты';
+    button.classList.remove('page-header__right-button--active');
+    menu.classList.remove('page-header__right-list--active');
+    document.removeEventListener('keydown', modalEscPressHandler);
+  };
+})();
+
+// показать/скрыть меню
+(function () {
+  var container = document.querySelector('.page-header__vertical-menu');
+  var button = container.querySelector('.page-header__vertical-button');
+  var menu = container.querySelector('.page-header__vertical-menu-content');
+
+  button.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    this.classList.toggle('page-header__vertical-button--active');
+    menu.classList.toggle('page-header__vertical-menu-content--active');
+
+    if (this.classList.contains('page-header__vertical-button--active')) {
+      this.title = 'Закрыть меню';
+      document.addEventListener('keydown', modalEscPressHandler);
+    } else {
+      this.title = 'Открыть меню';
+      document.removeEventListener('keydown', modalEscPressHandler);
+    }
+  });
+
+  var modalEscPressHandler = function (evt) {
+    window.utils.escPressHandler(evt, closeModal);
+  };
+
+  var closeModal = function () {
+    button.title = 'Открыть контакты';
+    button.classList.remove('page-header__vertical-button--active');
+    menu.classList.remove('page-header__vertical-menu-content--active');
+    document.removeEventListener('keydown', modalEscPressHandler);
+  };
 })();
