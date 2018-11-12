@@ -2,6 +2,10 @@
   display: flex;
   margin: 0 0 28px -12px;
   padding-left: 70px;
+
+  @media (max-width: @tablet - 1) {
+    padding-left: 40px;
+  }
 }
 
 .breadcrumbs__item {
@@ -23,6 +27,16 @@
       color: @black;
     }
   }
+
+  @media (max-width: @tablet - 1) {
+    &:first-child {
+      display: none;
+    }
+
+    &:nth-child(2)::before {
+      display: none;
+    }
+  }
 }
 
 .breadcrumbs__link {
@@ -39,5 +53,10 @@
   &--active {
     color: @black;
     text-decoration: none;
+  }
+
+  @media (max-width: @tablet - 1) {
+    font-size: 13px;
+    font-weight: 500;
   }
 }
