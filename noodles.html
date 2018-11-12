@@ -240,6 +240,9 @@
     <!-- Ветикальное меню -->
     <aside class="page-main__left vertical-menu">
       <span class="visually-hidden">Список блюд</span>
+      <button class="vertical-menu__button-menu button" type="button" title="Открыть меню">
+        <i class="fas fa-arrow-right"></i>
+      </button>
       <ul class="vertical-menu__list">
         <li class="vertical-menu__item">
           <a href="#" class="vertical-menu__link">Суши</a>
@@ -296,7 +299,7 @@
         <div class="noodles__form-fieldset-wrapper noodles__form-fieldset-wrapper--main">
           <fieldset class="noodles__form-fieldset">
             <legend class="noodles__form-legend">
-              <span class="visually-hidden">Начинка</span>
+              <span class="noodles__form-legend-title">Начинка</span>
               <span class="noodles__form-legend-img-container">
                 <img class="noodles__form-legend-img" src="img/content/noodles/lapshp_pshenichnaya.jpg" width="1920"
                      height="1380"
@@ -307,21 +310,21 @@
             <ul class="noodles__form-list">
               <li class="noodles__form-item">
                 <label class="noodles__form-label label-radio">
-                  <span class="label-radio__text">Харусаме (рисовая)</span>
+                  <span class="label-radio__text">Харусаме<br> (рисовая)</span>
                   <input class="noodles__form-input visually-hidden" type="radio" name="filling" value="1" checked>
                   <span class="label-radio__icon"></span>
                 </label>
               </li>
               <li class="noodles__form-item">
                 <label class="noodles__form-label label-radio">
-                  <span class="label-radio__text">Удон (пшеничная)</span>
+                  <span class="label-radio__text">Удон<br> (пшеничная)</span>
                   <input class="noodles__form-input visually-hidden" type="radio" name="filling" value="2">
                   <span class="label-radio__icon"></span>
                 </label>
               </li>
               <li class="noodles__form-item">
                 <label class="noodles__form-label label-radio">
-                  <span class="label-radio__text">Харусаме (рисовая)</span>
+                  <span class="label-radio__text">Харусаме<br> (рисовая)</span>
                   <input class="noodles__form-input visually-hidden" type="radio" name="filling" value="3">
                   <span class="label-radio__icon"></span>
                 </label>
@@ -330,7 +333,7 @@
           </fieldset>
           <fieldset class="noodles__form-fieldset">
             <legend class="noodles__form-legend">
-              <span class="visually-hidden">Гарнир</span>
+              <span class="noodles__form-legend-title">Гарнир</span>
               <span class="noodles__form-legend-img-container">
                 <img class="noodles__form-legend-img" src="img/content/noodles/garnish.png" width="260"
                      height="320" alt="Гарнир">
@@ -349,7 +352,7 @@
           </fieldset>
           <fieldset class="noodles__form-fieldset">
             <legend class="noodles__form-legend">
-              <span class="visually-hidden">Овощи</span>
+              <span class="noodles__form-legend-title">Овощи</span>
               <span class="noodles__form-legend-img-container">
                 <img class="noodles__form-legend-img" src="img/content/noodles/ovishi.png" width="400"
                      height="345" alt="Овощи">
@@ -368,7 +371,7 @@
           </fieldset>
           <fieldset class="noodles__form-fieldset">
             <legend class="noodles__form-legend">
-              <span class="visually-hidden">Соус</span>
+              <span class="noodles__form-legend-title">Соус</span>
               <span class="noodles__form-legend-img-container">
                 <img class="noodles__form-legend-img" src="img/content/noodles/soeviy-sous.jpg" width="414"
                      height="290" alt="Соус">
@@ -416,7 +419,7 @@
         <div class="noodles__form-fieldset-wrapper noodles__form-fieldset-wrapper--more">
           <fieldset class="noodles__form-fieldset">
             <legend class="noodles__form-legend">
-              <span class="visually-hidden">Дополнительная начинка</span>
+              <span class="noodles__form-legend-title">Начинка</span>
               <span class="noodles__form-legend-img-container">
                 <img class="noodles__form-legend-img" src="img/content/noodles/big__nazvaniia.png" width="256"
                      height="194" alt="Дополнительная начинка">
@@ -493,7 +496,7 @@
           </fieldset>
           <fieldset class="noodles__form-fieldset">
             <legend class="noodles__form-legend">
-              <span class="visually-hidden">Топинги</span>
+              <span class="noodles__form-legend-title">Топинги</span>
               <span class="noodles__form-legend-img-container">
                 <img class="noodles__form-legend-img" src="img/content/noodles/580b57fbd9996e24bc43c08d-min.png"
                      width="370" height="370" alt="Топинги">
@@ -548,10 +551,10 @@
           </fieldset>
           <fieldset class="noodles__form-fieldset">
             <legend class="noodles__form-legend">
-              <span class="visually-hidden">Топинги</span>
+              <span class="noodles__form-legend-title">Доп. соус</span>
               <span class="noodles__form-legend-img-container">
                 <img class="noodles__form-legend-img" src="img/content/noodles/hero.SauceUkrainian-min.png" width="500"
-                     height="500" alt="Топинги">
+                     height="500" alt="Доп. соус">
               </span>
             </legend>
             <ul class="noodles__form-list">
@@ -695,5 +698,6 @@
 <script src="js/utils.js"></script>
 <script src="js/header.js"></script>
 <script src="js/noodles.js"></script>
+<script src="js/vertical-menu.js"></script>
 </body>
 </html>
