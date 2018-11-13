@@ -14,4 +14,19 @@
       prevEl: '.swiper-button-prev',
     },
   });
+
+  var popularList = new Swiper('.popular-list__container', {
+    slidesPerView: 'auto',
+    spaceBetween: 0,
+    navigation: {
+      nextEl: '.popular-slider__btn-next',
+      prevEl: '.popular-slider__btn-prev',
+    },
+    breakpoints: {
+      1024: {
+        allowTouchMove: true,
+        spaceBetween: 10,
+      },
+    }
+  });
 })();

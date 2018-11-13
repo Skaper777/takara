@@ -160,7 +160,8 @@
             </ol>
             <div class="page-header__cart-total-price-wrapper">
               <div class="page-header__cart-total-price-text">
-                <span>Сумма</span><span> заказа</span>:
+                <span>Сумма</span>
+                <span> заказа</span>:
               </div>
               <div class="page-header__cart-total-price goods-total-price">
                 <span class="goods-total-price-value">489</span>
@@ -372,6 +373,7 @@
     <!-- Каталог меню -->
     <div class="main-wrapper wrapper">
       <section class="catalog">
+        <h2 class="catalog-title">Меню</h2>
         <ul class="catalog-list">
           <li class="catalog-list__item sushi-item">
             <a href="#" class="catalog-list__link">
@@ -435,7 +437,7 @@
           </li>
           <li class="catalog-list__item drink-item">
             <a href="#" class="catalog-list__link">
-              <img src="img/catalog/cola.png" class="catalog-list__item-img" alt="catalog-item">
+              <img src="img/catalog/coka.png" class="catalog-list__item-img" alt="catalog-item">
               <p class="catalog-list__item-title">Напитки</p>
             </a>
           </li>
@@ -445,63 +447,109 @@
       <!-- Популярные блюда -->
       <section class="popular">
         <h2 class="popular__title">Популярные блюда</h2>
-        <ul class="popular-list">
-          <li class="popular-list__item">
-            <img src="img/popular/bekon.png" class="popular-list__item-img" alt="popular">
-            <h4 class="popular-list__item-title"></h4>
-            <p class="popular-list__item-txt"></p>
-            <footer class="popular-list__item-footer">
-              <p class="popular-list__item-price">
-                <span></span>
-              </p>
-              <button type="button" class="popular-list__item-btn">В корзину</button>
-            </footer>
-          </li>
-          <li class="popular-list__item">
-            <img src="img/popular/duet.png" class="popular-list__item-img" alt="popular">
-            <h4 class="popular-list__item-title"></h4>
-            <p class="popular-list__item-txt"></p>
-            <footer class="popular-list__item-footer">
-              <p class="popular-list__item-price">
-                <span></span>
-              </p>
-              <button type="button" class="popular-list__item-btn">В корзину</button>
-            </footer>
-          </li>
-          <li class="popular-list__item">
-            <img src="img/popular/hit.png" class="popular-list__item-img" alt="popular">
-            <h4 class="popular-list__item-title"></h4>
-            <p class="popular-list__item-txt"></p>
-            <footer class="popular-list__item-footer">
-              <p class="popular-list__item-price">
-                <span></span>
-              </p>
-              <button type="button" class="popular-list__item-btn">В корзину</button>
-            </footer>
-          </li>
-          <li class="popular-list__item">
-            <img src="img/popular/midii.png" class="popular-list__item-img" alt="popular">
-            <h4 class="popular-list__item-title"></h4>
-            <p class="popular-list__item-txt"></p>
-            <footer class="popular-list__item-footer">
-              <p class="popular-list__item-price">
-                <span></span>
-              </p>
-              <button type="button" class="popular-list__item-btn">В корзину</button>
-            </footer>
-          </li>
-          <li class="popular-list__item">
-            <img src="img/popular/cake.png" class="popular-list__item-img" alt="popular">
-            <h4 class="popular-list__item-title"></h4>
-            <p class="popular-list__item-txt"></p>
-            <footer class="popular-list__item-footer">
-              <p class="popular-list__item-price">
-                <span></span>
-              </p>
-              <button type="button" class="popular-list__item-btn">В корзину</button>
-            </footer>
-          </li>
-        </ul>
+        <div class="popular-list__container">
+          <ul class="swiper-wrapper popular-list">
+            <li class="swiper-slide popular-list__item">
+              <a href="#" class="popular-list__link">
+                <header class="popular-list__item-header">
+                  <img src="img/popular/bekon.png" class="popular-list__item-img" alt="popular">
+                </header>
+                <div class="popular-list__item-body">
+                  <h4 class="popular-list__item-title">Бекон - брынза</h4>
+                  <p class="popular-list__item-txt">Бекон, брынза, оливки, красный лук, чесночное масло</p>
+                </div>
+                <footer class="popular-list__item-footer">
+                  <p class="popular-list__item-price">
+                    <span>550 ₽</span>
+                  </p>
+                  <button type="button" class="popular-list__item-btn">В корзину</button>
+                </footer>
+              </a>
+            </li>
+            <li class="swiper-slide popular-list__item">
+              <a href="#" class="popular-list__link">
+                <header class="popular-list__item-header">
+                  <img src="img/popular/duet.png" class="popular-list__item-img" alt="popular">
+                </header>
+                <div class="popular-list__item-body">
+                  <h4 class="popular-list__item-title">Дуэт микс</h4>
+                  <p class="popular-list__item-txt">Филадельфия Хит, Кани яки</p>
+                </div>
+                <footer class="popular-list__item-footer">
+                  <p class="popular-list__item-price">
+                    <span>450 ₽</span>
+                    <span class="popular-list__item-under">625 гр.</span>
+                  </p>
+                  <button type="button" class="popular-list__item-btn">В корзину</button>
+                </footer>
+              </a>
+            </li>
+            <li class="swiper-slide popular-list__item">
+              <a href="#" class="popular-list__link">
+                <header class="popular-list__item-header">
+                  <img src="img/popular/hit.png" class="popular-list__item-img" alt="popular">
+                </header>
+                <div class="popular-list__item-body">
+                  <h4 class="popular-list__item-title">Хит яки</h4>
+                  <p class="popular-list__item-txt">Лосось, угорь, сыр, авокадо, огурец,
+                    <br> сырно-сливочный соус</p>
+                </div>
+                <footer class="popular-list__item-footer">
+                  <p class="popular-list__item-price">
+                    <span>300 ₽</span>
+                    <span class="popular-list__item-under">325 гр.</span>
+                  </p>
+                  <button type="button" class="popular-list__item-btn">В корзину</button>
+                </footer>
+              </a>
+            </li>
+            <li class="swiper-slide popular-list__item popular-small">
+              <a href="#" class="popular-list__link">
+                <header class="popular-list__item-header">
+                  <img src="img/popular/midii.png" class="popular-list__item-img img-small" alt="popular">
+                </header>
+                <div class="popular-list__item-body">
+                  <h4 class="popular-list__item-title">Мидии запечённые</h4>
+                  <p class="popular-list__item-txt">3 соуса на выбор: сырный, моцарелла, спайси</p>
+                </div>
+                <footer class="popular-list__item-footer">
+                  <p class="popular-list__item-price">
+                    <span>249 ₽</span>
+                    <span class="popular-list__item-under">10 шт</span>
+                  </p>
+                  <button type="button" class="popular-list__item-btn">В корзину</button>
+                </footer>
+              </a>
+            </li>
+            <li class="swiper-slide popular-list__item popular-small">
+              <a href="#" class="popular-list__link">
+                <header class="popular-list__item-header">
+                  <img src="img/popular/cake.png" class="popular-list__item-img img-small" alt="popular">
+                </header>
+                <div class="popular-list__item-body">
+                  <h4 class="popular-list__item-title">Чизкейк</h4>
+                  <p class="popular-list__item-txt">В ассортименте</p>
+                </div>
+                <footer class="popular-list__item-footer">
+                  <p class="popular-list__item-price">
+                    <span>120 ₽</span>
+                  </p>
+                  <button type="button" class="popular-list__item-btn">В корзину</button>
+                </footer>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="popular-slider__btn-prev">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 6">
+              <path d="M5.4 6.1L0 .7.7 0l4.7 4.6L10 0l.7.7z"></path>
+            </svg>
+          </div>
+          <div class="popular-slider__btn-next">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 6">
+              <path d="M5.4 6.1L0 .7.7 0l4.7 4.6L10 0l.7.7z"></path>
+            </svg>
+          </div>
       </section>
       <section class="about">
         <h2 class="about-textblock__title">Суши - бары и доставка суши в г. Пскове</h2>
@@ -509,15 +557,18 @@
           <p class="about-textblock__slim">
             <span>
               <b>Японская кухня</b> – это не только огромное количество оригинальных блюд, но и строгое соблюдение
-              древних
-              традиций страны Восходящего солнца. Она отличается такой особенностью, как минимальная обработка
-              исключительно натуральных продуктов, а также в ней широко применяются морепродукты.
+              древних традиций
+              страны Восходящего солнца. Она отличается такой особенностью, как минимальная обработка исключительно
+              натуральных
+              продуктов, а также в ней широко применяются морепродукты.
             </span>
             <span>
               Японская кухня, как ни одна другая, характеризуется сезонностью, застольным этикетом, своеобразной
-              сервировкой и специфическими правилами в оформлении блюд. При соблюдении всех этих нюансов можно
-              окунуться
-              в особую атмосферу, которая царит в нашем суши-баре <b>«Такара»</b>, предлагающих такие блюда.
+              сервировкой и специфическими
+              правилами в оформлении блюд. При соблюдении всех этих нюансов можно окунуться в особую атмосферу, которая
+              царит
+              в нашем суши-баре
+              <b>«Такара»</b>, предлагающих такие блюда.
             </span>
             <span>
               <b>Суши-бар «Такара» в Пскове</b> приглашает всех гурманов и истинных ценителей вкуса. Если вы хотите
@@ -525,31 +576,33 @@
               такую же долгую жизнь, как и жители страны Восходящего солнца, тогда добро пожаловать к нам. Японские
               блюда
               позволят вам изменить не только ежедневный рацион, но и привнести в свою жизнь иное представление о
-              гастрономическом удовольствии. Вы спросите, вероятно: почему лучше отдать предпочтение японской кухне, а
-              не
-              какой-либо другой? Ответ очень прост – морепродукты и рыба очень богаты всеми необходимыми веществами для
-              организма, овощи и рис дарят здоровье, а специи и пряности обычным блюдам придают утонченный и
-              оригинальный
-              вкус. Эта кухня отличается своей невероятной полезностью, что и делает ее такой популярной среди россиян
-              в
-              настоящее время.
+              гастрономическом
+              удовольствии. Вы спросите, вероятно: почему лучше отдать предпочтение японской кухне, а не какой-либо
+              другой?
+              Ответ очень прост – морепродукты и рыба очень богаты всеми необходимыми веществами для организма, овощи и
+              рис
+              дарят здоровье, а специи и пряности обычным блюдам придают утонченный и оригинальный вкус. Эта кухня
+              отличается
+              своей невероятной полезностью, что и делает ее такой популярной среди россиян в настоящее время.
             </span>
           </p>
           <p class="about-textblock__wide">
             <span>
               Так же нашим баром-рестораном осуществляется доставка суши в Пскове. Заказать доставку вы можете позвонив
-              нам по телефону <b>60-22-29</b> или <b>60-20-67.</b><br>
-              В нашем суши баре вы откроете для себя многообразие необычных блюд, которые к тому же благотворно влияют
-              на
-              здоровье. Обращайтесь в наш ресторан <b>«Такара»</b>, где вся еда всегда высшего качества и по приемлемой
-              цене.
+              нам по телефону
+              <b>60-22-29</b> или
+              <b>60-20-67.</b>
+              <br> В нашем суши баре вы откроете для себя многообразие необычных блюд, которые к тому же благотворно
+              влияют на
+              здоровье. Обращайтесь в наш ресторан
+              <b>«Такара»</b>, где вся еда всегда высшего качества и по приемлемой цене.
             </span>
             <span>
-              Наши контакты: городские номера <b>60-22-29</b> или <b>60-20-67</b>, по ним вы можете сделать свой заказ
-              с 11.00 до
-              23.00
-              или же посетить в эти часы наше заведение лично и насладиться незабываемым вкусом оригинальных японских
-              блюд.
+              Наши контакты: городские номера
+              <b>60-22-29</b> или
+              <b>60-20-67</b>, по ним вы можете сделать свой заказ с 11.00 до 23.00 или же посетить в эти часы наше
+              заведение
+              лично и насладиться незабываемым вкусом оригинальных японских блюд.
             </span>
           </p>
         </div>
@@ -561,7 +614,8 @@
     <section class="notices">
       <div class="notices-wrapper wrapper">
         <p class="notices-txt">
-          Суши-бар по адресу: пл. Ленина 3 переехал на Октябрьский пр. 19А. <span class="notice-tin">(Вход со стороны кинотеатра "Победа")</span>
+          Суши-бар по адресу: пл. Ленина 3 переехал на Октябрьский пр. 19А.
+          <span class="notice-tin">(Вход со стороны кинотеатра "Победа")</span>
         </p>
       </div>
     </section>
@@ -577,7 +631,8 @@
           </picture>
         </a>
         <p class="page-footer__left-copyright">
-          © ТАКАРА - Суши-бары и служба доставки,<br> г. Псков, 2011 - 2018.
+          © ТАКАРА - Суши-бары и служба доставки,
+          <br> г. Псков, 2011 - 2018.
         </p>
         <div class="page-footer__left-social">
           <span class="page-footer__left-span">Мы есть в Вконтакте</span>
