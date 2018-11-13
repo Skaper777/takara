@@ -5,6 +5,16 @@
 
   @media (max-width: @tablet - 1) {
     padding-left: 40px;
+
+    &--ordering .breadcrumbs__item{
+      &:first-child {
+        display: inline-block;
+      }
+
+      &:nth-child(2)::before {
+        display: inline-block;
+      }
+    }
   }
 }
 

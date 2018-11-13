@@ -282,7 +282,7 @@
 
     <!--  Содержимое которое должно быть в main, вставлять в page-main__right -->
     <div class="page-main__right ordering">
-      <ul class="breadcrumbs">
+      <ul class="breadcrumbs breadcrumbs--ordering">
         <li class="breadcrumbs__item">
           <a href="index.html" class="breadcrumbs__link">Главная</a>
         </li>
@@ -383,13 +383,16 @@
                 <div class="drop-down__list-wrapper">
                   <ul class="drop-down__list">
                     <li class="drop-down__item">
-                      <a href="#" class="drop-down__link">Самовывоз (ул. Западная, 16 Б)</a>
+                      <a href="#" class="drop-down__link">Самовывоз (пр. Октябрьский, 19а)</a>
                     </li>
                     <li class="drop-down__item">
                       <a href="#" class="drop-down__link">Самовывоз (пр. Октябрьский, 19а)</a>
                     </li>
                     <li class="drop-down__item">
-                      <a href="#" class="drop-down__link">Доставка (адрес клиента)</a>
+                      <a href="#" class="drop-down__link drop-down__link--search">Доставка (адрес клиента)</a>
+                    </li>
+                    <li class="drop-down__item">
+                      <a href="#" class="drop-down__link">test</a>
                     </li>
                   </ul>
                   <label class="drop-down__label-search">
@@ -400,32 +403,32 @@
             </div>
             <div class="ordering__form-info-pay">
               <h3 class="ordering__form-info-title">Оплата:</h3>
-              <div class="ordering__form-info-pay-wrapper">
-                <div class="drop-down">
-                  <button class="drop-down__button" type="button" title="Открыть список">Наличными</button>
-                  <div class="drop-down__list-wrapper">
-                    <ul class="drop-down__list">
-                      <li class="drop-down__item">
-                        <a href="#" class="drop-down__link">Наличными</a>
-                      </li>
-                      <li class="drop-down__item">
-                        <a href="#" class="drop-down__link">Кредит</a>
-                      </li>
-                      <li class="drop-down__item">
-                        <a href="#" class="drop-down__link">Карткой</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="ordering__form-info-pay-button-wrapper">
-                  <span>Итого к оплате:</span>
-                  <span class="goods-total-price-value">869</span>
-                  <span class="ordering__form-info-pay-sign">руб.</span>
-                  <button class="ordering__form-info-pay-button button" type="submit">Оформить заказ</button>
+              <div class="drop-down">
+                <button class="drop-down__button" type="button" title="Открыть список">Наличными</button>
+                <div class="drop-down__list-wrapper">
+                  <ul class="drop-down__list">
+                    <li class="drop-down__item">
+                      <a href="#" class="drop-down__link">Наличными</a>
+                    </li>
+                    <li class="drop-down__item">
+                      <a href="#" class="drop-down__link">Кредит</a>
+                    </li>
+                    <li class="drop-down__item">
+                      <a href="#" class="drop-down__link">Карткой</a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+        <div class="ordering__form-submit-button-wrapper">
+          <div class="ordering__form-submit-button-text">
+            <span>Итого к оплате:</span>
+            <span class="goods-total-price-value">869</span>
+            <span class="ordering__form-submit-button-sign">руб.</span>
+          </div>
+          <button class="ordering__form-submit-button button" type="submit">Оформить заказ</button>
         </div>
       </form>
     </div>
