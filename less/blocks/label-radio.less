@@ -50,6 +50,29 @@
       }
     }
   }
+
+  @media (max-width: @desktop-1110) {
+    font-size: 14px;
+    line-height: normal;
+  }
+
+  @media (max-width: @desktop) {
+    font-size: 12px;
+
+    .label-radio__icon {
+      width: 12px;
+      height: 12px;
+
+      &::before {
+        width: 12px;
+        height: 12px;
+      }
+    }
+  }
+
+  @media (max-width: @tablet - 1) {
+    font-size: 10px;
+  }
 }
 
 .label-radio__text {
@@ -60,4 +83,12 @@
   margin: 0 10px 0 auto;
   font-size: 16px;
   color: @red;
+
+  @media (max-width: @desktop-1110) {
+    font-size: 14px;
+  }
+
+  @media (max-width: @desktop) {
+    font-size: 12px;
+  }
 }
