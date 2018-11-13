@@ -374,7 +374,6 @@
   }
 
   @media (max-width: @tablet - 1) {
-    display: list-item;
     font-weight: 500;
 
     .goods-delete {
@@ -398,6 +397,10 @@
   &:hover,
   &:focus {
     color: @red;
+  }
+
+  @media (max-width: @tablet - 1) {
+    display: list-item;
   }
 }
 
@@ -432,9 +435,20 @@
   border: 1px solid @red;
   border-radius: 5px;
 
+  &:hover,
+  &:focus {
+    background: @red;
+  }
+
   &:active {
     transform: translateY(2px);
     outline: none;
+  }
+
+  &:disabled {
+    background: transparent;
+    border: 1px solid @grey;
+    transform: translateY(0);
   }
 
   span {
