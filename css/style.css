@@ -7012,7 +7012,6 @@ body {
     width: 200px;
   }
 }
-
 .main-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7049,7 +7048,6 @@ body {
             order: 1;
   }
 }
-
 .catalog-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7177,10 +7175,6 @@ body {
 .drink-item img {
   display: none;
 }
-
-.popular {
-  position: relative;
-
 .main-wrapper {
   max-width: 1170px;
   padding: 60px 20px;
@@ -7190,7 +7184,9 @@ body {
 .main-wrapper h2 {
   margin-top: 55px;
   font-size: 30px;
-
+}
+.popular {
+  position: relative;
 }
 .popular-list {
   display: -webkit-box;
@@ -7460,12 +7456,11 @@ body {
 .notice-tin {
   font-size: 18px;
 }
-
 @media (max-width: 1024px) {
   .notice-tin {
     font-size: 12px;
   }
-
+}
 .ordering {
   max-width: 855px;
 }
@@ -8101,5 +8096,4 @@ body {
 }
 .drop-down__input-search:focus::placeholder {
   opacity: 0;
-
 }
