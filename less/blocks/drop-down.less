@@ -1,0 +1,123 @@
+.drop-down {
+  position: relative;
+  width: 100%;
+  text-align: left;
+
+  @media (max-width: @tablet - 1) {
+    font-size: 13px;
+  }
+}
+
+.drop-down__button {
+  position: relative;
+  width: 100%;
+  padding: 7px 25px 6px 9px;
+  text-align: left;
+  background: transparent;
+  border: 1px solid #bfbfbf;
+  border-radius: 5px;
+  transition: all 0.3s;
+  z-index: 1;
+  cursor: pointer;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    border: 1px solid @red;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 49.5%;
+    right: 18px;
+    width: 7px;
+    height: 7px;
+    border-right: 2px solid #dfdfe0;
+    border-bottom: 2px solid #dfdfe0;
+    transform: rotate(45deg) translateY(-50%);
+    transform-origin: 75% 25%;
+    transition: all 0.3s;
+  }
+
+  &:focus,
+  &:hover {
+    &::after {
+      border-right: 2px solid @red;
+      border-bottom: 2px solid @red;
+    }
+  }
+
+  &--active::after {
+    transform: rotate(225deg) translateY(-50%);
+  }
+}
+
+.drop-down__list-wrapper {
+  position: relative;
+}
+
+.drop-down__list {
+  position: absolute;
+  top: calc(100% - 1px);
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 77px;
+  margin-bottom: 7px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid #bfbfbf;
+  border-radius: 5px;
+  overflow: auto;
+
+  &--active {
+    display: block;
+  }
+}
+
+.drop-down__link {
+  display: flex;
+  padding: 5px 0 4px 9px;
+  letter-spacing: -0.1px;
+
+  &:hover,
+  &:focus {
+    background: #f24841;
+  }
+}
+
+.drop-down__label-search {
+  position: absolute;
+  top: 85px;
+  left: 0;
+  display: none;
+  width: 100%;
+
+  &--active {
+    display: block;
+  }
+}
+
+.drop-down__input-search {
+  width: 100%;
+  padding: 7px 10px 6px;
+  font: inherit;
+  font-weight: 300;
+  border: 1px solid #bfbfbf;
+  border-radius: 5px;
+  outline: none;
+
+  &::placeholder {
+    transition: all 0.3s;
+    opacity: 1;
+  }
+
+  &:hover,
+  &:focus {
+    border: 1px solid @red;
+  }
+
+  &:focus::placeholder {
+    opacity: 0;
+  }
+}

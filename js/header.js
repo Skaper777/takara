@@ -46,11 +46,10 @@
 // изменения количества товаров
 (function () {
   var body = document.querySelector('body');
-  var form = body.querySelector('.goods-form');
-  var containers = form.querySelectorAll('.goods-container');
+  var containers = body.querySelectorAll('.goods-container');
+  var buttonRemoveAll = body.querySelectorAll('.goods-delete-all');
   var MIN_COUNT = 1;
   var MAX_COUNT = 100;
-
 
   var getTotalPrice = function () {
     var price = body.querySelectorAll('.goods-price-value');
@@ -104,6 +103,12 @@
     element.textContent = value * price
   };
 
+  var removeAllItem = function () {
+    Array.from(containers).forEach(function (item) {
+      item.remove();
+    });
+  };
+
   var getChangePrice = function (evt, item) {
     var input = item.querySelector('.goods-input');
     var currentValue = input.value;
@@ -131,11 +136,24 @@
     }
   };
 
+  var getControllButton = function (item) {
+    var input = item.querySelector('.goods-input');
+    var subtraction = item.querySelector('.goods-subtraction');
+    var addition = item.querySelector('.goods-addition');
+    var inputValue = parseInt(input.value, 10);
+    var minCount = inputValue <= MIN_COUNT;
+    var maxCount = inputValue >= MAX_COUNT;
+
+    subtraction.disabled = minCount ? minCount : false;
+    addition.disabled = maxCount ? maxCount : false;
+  };
+
   Array.from(containers).forEach(function (item) {
     item.addEventListener('click', function (evt) {
       getChangePrice(evt, item);
       getTotalPrice();
       getTotalGoods();
+      getControllButton(item);
     });
 
 
@@ -143,13 +161,24 @@
       getChangePrice(evt, item);
       getTotalPrice();
       getTotalGoods();
+      getControllButton(item);
     });
+
+    getControllButton(item);
   });
 
   window.addEventListener('load', function () {
     getTotalPrice();
     getTotalGoods();
-  })
+  });
+
+  Array.from(buttonRemoveAll).forEach(function (item) {
+    item.addEventListener('click', function () {
+      removeAllItem();
+      getTotalPrice();
+      getTotalGoods();
+    });
+  });
 })();
 
 // показать/скрыть контакты
