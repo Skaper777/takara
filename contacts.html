@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.min.css">
-  <title>Подтверждение заказа</title>
+  <title>Контакты</title>
 </head>
 <body>
 <div class="footer-bottom__wrapper">
@@ -193,7 +193,7 @@
             <a href="menu.html" class="page-header__center-link">Меню</a>
           </li>
           <li class="page-header__center-item">
-            <a href="contacts.html" class="page-header__center-link">Контакты</a>
+            <a class="page-header__center-link page-header__center-link--active">Контакты</a>
           </li>
         </ul>
       </div>
@@ -282,20 +282,42 @@
       </aside>
 
       <!--  Содержимое которое должно быть в main, вставлять в page-main__right -->
-      <div class="page-main__right ordering">
+      <div class="page-main__right contacts">
         <ul class="breadcrumbs breadcrumbs--ordering">
           <li class="breadcrumbs__item">
             <a href="index.html" class="breadcrumbs__link">Главная</a>
           </li>
           <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link breadcrumbs__link--active">Подтверждение заказа</a>
+            <a class="breadcrumbs__link breadcrumbs__link--active">Контакты</a>
           </li>
         </ul>
-        <h1 class="ordering__h1">Подтверждение заказа</h1>
-        <form class="ordering__form" action="/" method="get">
-          <p class="ordering__success-text">Ваш заказ N 9311 принят!</p>
-          <p class="ordering__success-text">Наши менеджеры свяжутся с Вами самое ближайшее время!</p>
-        </form>
+        <h1 class="contacts__h1">Контакты</h1>
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <i class="fab fa-instagram"></i>
+            <a href="#">takara.pskov</a>
+            <span> - наш Instagram.</span>
+          </li>
+          <li class="contacts__item">
+            <i class="fab fa-vk"></i>
+            <a href="#">https://vk.com/club47933889</a>
+            <span> - наша группа в Вконтакте.</span>
+          </li>
+        </ul>
+        <h2 class="contacts__h2">Адреса наших суши-баров:</h2>
+        <ul class="contacts__address-list">
+          <li class="contacts__address-item">
+            <h3 class="contacts__address-title">Улица Западная дом 16Б, ТД Гулливер</h3>
+            <p class="contacts__address-text">Заказ на вынос: <a href="tel:612-001">612-001</a></p>
+            <p class="contacts__address-text">На доставку: <a href="tel:602-067">602-067</a></p>
+          </li>
+          <li class="contacts__address-item">
+            <h3 class="contacts__address-title">Октябрьский пр. 19А</h3>
+            <p class="contacts__address-text">Заказ на вынос: <a href="tel:612-011">612-011</a></p>
+            <p class="contacts__address-text">На доставку: <a href="tel:612-011">612-011</a></p>
+          </li>
+        </ul>
+        <div class="contacts__map"></div>
       </div>
     </div>
   </main>
@@ -330,7 +352,7 @@
             <a class="page-footer__nav-link" href="delivery.html">Доставка</a>
           </li>
           <li class="page-footer__nav-item">
-            <a class="page-footer__nav-link" href="menu.html">Меню</a>
+            <a class="page-footer__nav-link" href="ordering.html">Меню</a>
           </li>
           <li class="page-footer__nav-item hidden-item">
             <a class="page-footer__nav-link" href="about.html">О нас</a>
@@ -382,5 +404,8 @@
 <script src="js/header.js"></script>
 <script src="js/vertical-menu.js"></script>
 <script src="js/drop-down.js"></script>
+<script
+  src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyDluwBfvy_M346vmyhvVLD62kK76nnVtss"></script>
+<script src="js/map.js"></script>
 </body>
 </html>
