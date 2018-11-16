@@ -7176,6 +7176,7 @@ body {
   top: 35px;
   left: 110px;
 }
+<<<<<<< HEAD
 @media (max-width: 1024px) {
   .drink-item img {
     width: 40px;
@@ -7183,6 +7184,8 @@ body {
     left: 90px;
   }
 }
+=======
+>>>>>>> 213bd8c7bb08df617549e605778758138ab26967
 .main-wrapper {
   max-width: 1170px;
   padding: 60px 20px;
@@ -7778,6 +7781,7 @@ body {
     font-size: 12px;
   }
 }
+<<<<<<< HEAD
 @media (max-width: 767px) {
   .breadcrumbs-menu .breadcrumbs__item:first-child {
     display: block;
@@ -7902,6 +7906,8 @@ body {
     margin-bottom: 17px;
   }
 }
+=======
+>>>>>>> 213bd8c7bb08df617549e605778758138ab26967
 .ordering {
   max-width: 855px;
 }
