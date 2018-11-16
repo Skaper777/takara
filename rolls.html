@@ -23,7 +23,7 @@
               <a href="#" class="page-header__vertical-link">Суши</a>
             </li>
             <li class="page-header__vertical-item">
-              <a href="#" class="page-header__vertical-link">Роллы</a>
+              <a href="rolls.html" class="page-header__vertical-link">Роллы</a>
             </li>
             <li class="page-header__vertical-item">
               <a href="#" class="page-header__vertical-link">Запечённые роллы</a>
@@ -35,7 +35,7 @@
               <a href="#" class="page-header__vertical-link">Пицца</a>
             </li>
             <li class="page-header__vertical-item">
-              <a href="noodles.html" class="page-header__vertical-link">Лапша WOK</a>
+              <a href="#" class="page-header__vertical-link">Лапша WOK</a>
             </li>
             <li class="page-header__vertical-item">
               <a href="#" class="page-header__vertical-link">Супы</a>
@@ -231,7 +231,7 @@
 
   <main class="page-main">
     <div class="page-main__wrapper wrapper">
-      <aside class="page-main__left vertical-menu vertical-menu__menu">
+      <aside class="page-main__left vertical-menu">
         <span class="visually-hidden">Список блюд</span>
         <button class="vertical-menu__button-menu button" type="button" title="Открыть меню">
           <i class="fas fa-arrow-right"></i>
@@ -241,7 +241,7 @@
             <a href="#" class="vertical-menu__link">Суши</a>
           </li>
           <li class="vertical-menu__item">
-            <a href="rolls.html" class="vertical-menu__link">Роллы</a>
+            <a href="rolls.html" class="vertical-menu__link vertical-menu__link--active">Роллы</a>
           </li>
           <li class="vertical-menu__item">
             <a href="#" class="vertical-menu__link">Запечённые роллы</a>
@@ -278,76 +278,158 @@
             <a href="index.html" class="breadcrumbs__link">Главная</a>
           </li>
           <li class="breadcrumbs__item">
-            <a href="menu.html" class="breadcrumbs__link breadcrumbs__link--active">Меню</a>
+            <a href="menu.html" class="breadcrumbs__link">Меню</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link breadcrumbs__link--active">Роллы</a>
           </li>
         </ul>
-        <h1 class="menu-title">Меню</h1>
-        <section class="menu">
-          <ul class="catalog-list">
-            <li class="catalog-list__item sushi-item">
-              <a href="#" class="catalog-list__link">
-                <img src="img/catalog/sushi.png" class="catalog-list__item-img" alt="catalog-item">
-                <p class="catalog-list__item-title">Суши</p>
+        <!-- Карточки товаров -->
+        <section class="cards">
+          <h1 class="cards-title">Роллы</h1>
+          <ul class="cards-list">
+            <li class="cards-list__item">
+              <a href="#" class="cards-list__link">
+                <header class="cards-list__item-header">
+                  <img src="img/rolls/fil.png" class="cards-list__item-img" alt="card">
+                </header>
+                <div class="cards-list__item-body">
+                  <h4 class="cards-list__item-title">Филадельфия</h4>
+                  <p class="cards-list__item-txt">Лосось, огурец, сыр сливочный</p>
+                </div>
+                <footer class="cards-list__item-footer">
+                  <p class="cards-list__item-price">
+                    <span>310 ₽</span>
+                    <span class="cards-list__item-under">310 гр.</span>
+                  </p>
+                  <button type="button" class="cards-list__item-btn">В корзину</button>
+                </footer>
               </a>
             </li>
-            <li class="catalog-list__item rolls-item">
-              <a href="#" class="catalog-list__link">
-                <img src="" class="catalog-list__item-img" alt="catalog-item">
-                <p class="catalog-list__item-title">Роллы</p>
+            <li class="cards-list__item">
+              <a href="card.html" class="cards-list__link">
+                <header class="cards-list__item-header">
+                  <img src="img/rolls/krab.png" class="cards-list__item-img" alt="card">
+                </header>
+                <div class="cards-list__item-body">
+                  <h4 class="cards-list__item-title">Калифорния краб</h4>
+                  <p class="cards-list__item-txt">Снежный краб, огурец, спайси соус, икра масаго</p>
+                </div>
+                <footer class="cards-list__item-footer">
+                  <p class="cards-list__item-price">
+                    <span>200 ₽</span>
+                    <span class="cards-list__item-under">265 гр.</span>
+                  </p>
+                  <button type="button" class="cards-list__item-btn">В корзину</button>
+                </footer>
               </a>
             </li>
-            <li class="catalog-list__item fry-rolls-item">
-              <a href="#" class="catalog-list__link">
-                <img src="" class="catalog-list__item-img" alt="catalog-item">
-                <p class="catalog-list__item-title">Запеченные роллы</p>
+            <li class="cards-list__item">
+              <a href="#" class="cards-list__link">
+                <header class="cards-list__item-header">
+                  <img src="img/rolls/lux.png" class="cards-list__item-img" alt="card">
+                </header>
+                <div class="cards-list__item-body">
+                  <h4 class="cards-list__item-title">Филадельфия люкс</h4>
+                  <p class="cards-list__item-txt">Лосось, сыр сливочный</p>
+                </div>
+                <footer class="cards-list__item-footer">
+                  <p class="cards-list__item-price">
+                    <span>340 ₽</span>
+                    <span class="cards-list__item-under">310 гр.</span>
+                  </p>
+                  <button type="button" class="cards-list__item-btn">В корзину</button>
+                </footer>
               </a>
             </li>
-            <li class="catalog-list__item sets-item">
-              <a href="#" class="catalog-list__link">
-                <img src="" class="catalog-list__item-img" alt="catalog-item">
-                <p class="catalog-list__item-title">Наборы</p>
+            <li class="cards-list__item">
+              <a href="#" class="cards-list__link">
+                <header class="cards-list__item-header">
+                  <img src="img/rolls/krevetka.png" class="cards-list__item-img" alt="card">
+                </header>
+                <div class="cards-list__item-body">
+                  <h4 class="cards-list__item-title">Калифорния креветка</h4>
+                  <p class="cards-list__item-txt">Креветка тигровая, соус спайси, авокадо, огурец, икра масаго</p>
+                </div>
+                <footer class="cards-list__item-footer">
+                  <p class="cards-list__item-price">
+                    <span>250 ₽</span>
+                    <span class="cards-list__item-under">255 гр.</span>
+                  </p>
+                  <button type="button" class="cards-list__item-btn">В корзину</button>
+                </footer>
               </a>
             </li>
-            <li class="catalog-list__item pizza-item">
-              <a href="#" class="catalog-list__link">
-                <img src="" class="catalog-list__item-img" alt="catalog-item">
-                <p class="catalog-list__item-title">Пицца</p>
+            <li class="cards-list__item">
+              <a href="#" class="cards-list__link">
+                <header class="cards-list__item-header">
+                  <img src="img/rolls/nag.png" class="cards-list__item-img" alt="card">
+                </header>
+                <div class="cards-list__item-body">
+                  <h4 class="cards-list__item-title">Нагоя</h4>
+                  <p class="cards-list__item-txt">Угорь, такуан, сыр сливочный, соус унаги, кунжут</p>
+                </div>
+                <footer class="cards-list__item-footer">
+                  <p class="cards-list__item-price">
+                    <span>350 ₽</span>
+                    <span class="cards-list__item-under">305 гр.</span>
+                  </p>
+                  <button type="button" class="cards-list__item-btn">В корзину</button>
+                </footer>
               </a>
             </li>
-            <li class="catalog-list__item wok-item">
-              <a href="noodles.html" class="catalog-list__link">
-                <img src="img/catalog/wok.png" class="catalog-list__item-img" alt="catalog-item">
-                <p class="catalog-list__item-title">Лапша wok</p>
+            <li class="cards-list__item">
+              <a href="#" class="cards-list__link">
+                <header class="cards-list__item-header">
+                  <img src="img/rolls/mix.png" class="cards-list__item-img" alt="card">
+                </header>
+                <div class="cards-list__item-body">
+                  <h4 class="cards-list__item-title">Филадельфия микс</h4>
+                  <p class="cards-list__item-txt">Лосось, угорь, томаго, огурец, сыр сливочный</p>
+                </div>
+                <footer class="cards-list__item-footer">
+                  <p class="cards-list__item-price">
+                    <span>350 ₽</span>
+                    <span class="cards-list__item-under">310 гр.</span>
+                  </p>
+                  <button type="button" class="cards-list__item-btn">В корзину</button>
+                </footer>
               </a>
             </li>
-            <li class="catalog-list__item soup-item">
-              <a href="#" class="catalog-list__link">
-                <img src="img/catalog/miso.png" class="catalog-list__item-img" alt="catalog-item">
-                <p class="catalog-list__item-title">Супы</p>
+            <li class="cards-list__item">
+              <a href="#" class="cards-list__link">
+                <header class="cards-list__item-header">
+                  <img src="img/rolls/fue.png" class="cards-list__item-img" alt="card">
+                </header>
+                <div class="cards-list__item-body">
+                  <h4 class="cards-list__item-title">Фьюжн</h4>
+                  <p class="cards-list__item-txt">Лосось, угорь, сыр сливочный, огурец, авокадо, кунжут, унаги соус</p>
+                </div>
+                <footer class="cards-list__item-footer">
+                  <p class="cards-list__item-price">
+                    <span>370 ₽</span>
+                    <span class="cards-list__item-under">310 гр.</span>
+                  </p>
+                  <button type="button" class="cards-list__item-btn">В корзину</button>
+                </footer>
               </a>
             </li>
-            <li class="catalog-list__item lanch-item">
-              <a href="#" class="catalog-list__link">
-                <img src="img/catalog/lanch.png" class="catalog-list__item-img" alt="catalog-item">
-                <p class="catalog-list__item-title">Бизнес ланчи</p>
-              </a>
-            </li>
-            <li class="catalog-list__item salad-item">
-              <a href="#" class="catalog-list__link">
-                <img src="" class="catalog-list__item-img" alt="catalog-item">
-                <p class="catalog-list__item-title">Салаты и закуски</p>
-              </a>
-            </li>
-            <li class="catalog-list__item desert-item">
-              <a href="#" class="catalog-list__link">
-                <img src="" class="catalog-list__item-img" alt="catalog-item">
-                <p class="catalog-list__item-title">Десерты</p>
-              </a>
-            </li>
-            <li class="catalog-list__item drink-item">
-              <a href="#" class="catalog-list__link">
-                <img src="img/catalog/cola.png" class="catalog-list__item-img" alt="catalog-item">
-                <p class="catalog-list__item-title">Напитки</p>
+            <li class="cards-list__item">
+              <a href="#" class="cards-list__link">
+                <header class="cards-list__item-header">
+                  <img src="img/rolls/los.png" class="cards-list__item-img" alt="card">
+                </header>
+                <div class="cards-list__item-body">
+                  <h4 class="cards-list__item-title">Сливочный лосось</h4>
+                  <p class="cards-list__item-txt">Лосось, креветка салатная, огурец, сливочный сыр, айсберг, сливки, укроп</p>
+                </div>
+                <footer class="cards-list__item-footer">
+                  <p class="cards-list__item-price">
+                    <span>250 ₽</span>
+                    <span class="cards-list__item-under">290 гр.</span>
+                  </p>
+                  <button type="button" class="cards-list__item-btn">В корзину</button>
+                </footer>
               </a>
             </li>
           </ul>
@@ -388,7 +470,7 @@
             <a class="page-footer__nav-link" href="delivery.html">Доставка</a>
           </li>
           <li class="page-footer__nav-item">
-            <a class="page-footer__nav-link" href="menu.html">Меню</a>
+            <a class="page-footer__nav-link" href="ordering.html">Меню</a>
           </li>
           <li class="page-footer__nav-item hidden-item">
             <a class="page-footer__nav-link" href="about.html">О нас</a>

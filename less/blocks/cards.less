@@ -1,0 +1,158 @@
+.cards-title {
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 50px;
+
+  @media (max-width: @tablet - 1) {
+    font-size: 16px;
+  }
+}
+
+.cards-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 60px;
+
+  @media (max-width: @tablet) {
+    padding: 0 10px;
+  }
+}
+
+.cards-list__link {
+  &:hover {
+    box-shadow: 4px 4px 4px 2px black;
+  }
+}
+
+.cards-list__item {
+  width: 222px;
+  margin-bottom: 20px;
+  background: url(../img/popular/item-back.jpg) no-repeat;
+  background-size: contain;
+  color: white;
+  box-shadow: 0 0 20px -5px black;
+  transition: 0.3s;
+
+  @media (max-width: @desktop) {
+    width: 196px;
+  }
+
+  &:hover {
+    box-shadow: 0 0 20px -5px @red;
+  }
+}
+
+.cards-list__item-header {
+  height: 192px;
+  text-align: center;
+
+  @media (max-width: @desktop) {
+    height: 175px;
+  }
+}
+
+.cards-list__item-img {
+  margin-top: 15px;
+  padding: 0 20px;
+
+  @media (max-width: @desktop) {
+    width: 146px;
+  }
+}
+
+.cards-list__item-body {
+  height: 115px;
+  text-align: center;
+
+
+  @media (max-width: @desktop) {
+    height: 89px;
+  }
+}
+
+.cards-list__item-title {
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @media (max-width: @desktop) {
+    font-size: 14px;
+  }
+}
+
+.cards-list__item-txt {
+  padding: 0 20px;
+
+  @media (max-width: @desktop) {
+    font-size: 13px;
+  }
+}
+
+.cards-list__item-footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 15px;
+  padding-bottom: 20px;
+}
+
+.cards-list__item-price {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  height: 42px;
+  font-size: 18px;
+  text-align: center;
+
+  @media (max-width: @desktop) {
+    font-size: 16px;
+  }
+}
+
+.cards-list__item-under {
+  position: relative;
+  font-size: 14px;
+  line-height: 20px;
+  color: @red;
+
+  @media (max-width: @desktop) {
+    font-size: 14px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 45px;
+    height: 1px;
+    background: white;
+  }
+}
+
+.cards-list__item-btn {
+  border: 1px solid @red;
+  width: 110px;
+  height: 35px;
+  border-radius: 20px;
+  background: none;
+  color: white;
+  font-family: @MuseoSansCyrl;
+  cursor: pointer;
+  transition: 0.3s;
+
+  @media (max-width: @desktop) {
+    width: 80px;
+    font-size: 13px;
+    height: 25px;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: @red;
+  }
+}
