@@ -1,0 +1,117 @@
+.card-title {
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+
+  @media (max-width: @desktop) {
+    display: none;
+  }
+}
+
+.card-info {
+  font-size: 18px;
+  text-align: center;
+  line-height: 24px;
+
+  @media (max-width: @desktop) {
+    display: none;
+  }
+}
+
+.card-main {
+  display: flex;
+  width: 504px;
+  margin: 0 auto;
+  justify-content: space-between;
+
+  @media (max-width: @desktop) {
+    width: 330px;
+    flex-direction: column;
+    padding-bottom: 50px;
+  }
+}
+
+.card-image__block {
+  @media (max-width: @desktop) {
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+}
+
+.card-main__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: end;
+
+  @media (max-width: @desktop) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.card-price {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.card-btn {
+  width: 150px;
+  height: 40px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 20px;
+  background: @red;
+  color: white;
+  font-family: @MuseoSansCyrl;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+
+  @media (max-width: @desktop) {
+    margin-top: 0;
+    width: 120px;
+    font-size: 14px;
+    height: 35px;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: @red;
+    background: white;
+  }
+}
+
+.card-image__title {
+  display: none;
+  position: relative;
+  font-size: 16px;
+  font-weight: 500;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 26px;
+    left: 31px;
+    width: 270px;
+    height: 1px;
+    background: black;
+  }
+
+  @media (max-width: @desktop) {
+    display: block;
+  }
+}
+
+.card-image__txt {
+  display: none;
+  font-size: 16px;
+
+  @media (max-width: @desktop) {
+    display: block;
+  }
+}
