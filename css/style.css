@@ -6081,6 +6081,7 @@ body {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  width: 100%;
 }
 .page-footer {
   background-color: black;
@@ -6532,10 +6533,15 @@ body {
   text-align: center;
 }
 .noodles__form-fieldset-wrapper--more .noodles__form-legend {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   text-align: center;
 }
-.noodles__form-fieldset-wrapper--more .noodles__form-list {
-  width: 300px;
+.noodles__form-fieldset-wrapper--more .noodles__form-legend-title {
+  width: 100%;
+}
+.noodles__form-fieldset-wrapper--more .noodles__form-legend-img-container {
+  margin: 0 auto;
 }
 .noodles__form-fieldset-wrapper--more .label-radio__icon {
   margin-right: 30px;
@@ -6566,7 +6572,6 @@ body {
         flex-wrap: wrap;
   }
   .noodles__form-fieldset-wrapper--more .noodles__form-fieldset {
-    max-width: calc(50% - 30px);
     margin-bottom: 30px;
   }
   .noodles__form-fieldset-wrapper--more .noodles__form-label {
@@ -6641,14 +6646,12 @@ body {
   }
 }
 @media (max-width: 570px) {
-  .noodles__form-fieldset-wrapper {
+  .noodles__form-fieldset-wrapper--main {
     margin-left: -10px;
-  }
-  .noodles__form-fieldset-wrapper .noodles__form-fieldset {
-    margin-left: 10px;
   }
   .noodles__form-fieldset-wrapper--main .noodles__form-fieldset {
     max-width: 85px;
+    margin-left: 10px;
   }
   .noodles__form-fieldset-wrapper--main .noodles__form-legend-text {
     width: 55px;
@@ -6811,6 +6814,10 @@ body {
   background: #ff0000;
   border-radius: 5px;
 }
+.noodles__form-fieldset-price-sale:empty {
+  margin-bottom: 40px;
+  padding: 0;
+}
 @media (max-width: 1100px) {
   .noodles__form-fieldset-price-sale {
     font-size: 15px;
@@ -6909,15 +6916,6 @@ body {
   }
 }
 @media (max-width: 640px) {
-  .noodles__cart-total-wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 180px;
-    margin-top: -100px;
-    margin-left: auto;
-  }
 }
 .noodles__cart-total-button {
   margin-left: 75px;
