@@ -5215,6 +5215,9 @@ body {
 .label-radio--not-pick {
   cursor: auto;
 }
+.label-radio--not-pick .label-radio__icon {
+  display: none;
+}
 .label-radio--not-pick:hover .label-radio__text,
 .label-radio--not-pick:focus .label-radio__text {
   color: #010101;
@@ -6524,7 +6527,7 @@ body {
   width: 120px;
 }
 .noodles__form-fieldset-wrapper--main .label-radio__text--width-auto {
-  width: auto;
+  width: 175px;
   margin-left: -35px;
   text-align: center;
 }
@@ -6552,6 +6555,10 @@ body {
   }
   .noodles__form-fieldset-wrapper--main .noodles__form-list {
     width: auto;
+  }
+  .noodles__form-fieldset-wrapper--main .label-radio__text--width-auto {
+    width: 150px;
+    margin-left: -25px;
   }
   .noodles__form-fieldset-wrapper--more {
     margin-bottom: -30px;
@@ -6581,6 +6588,10 @@ body {
   }
 }
 @media (max-width: 1024px) {
+  .noodles__form-fieldset-wrapper--main .label-radio__text--width-auto {
+    width: 130px;
+    margin-left: -25px;
+  }
   .noodles__form-fieldset-wrapper--more .noodles__form-label {
     font-size: 13px;
   }
@@ -6601,7 +6612,7 @@ body {
     width: 55px;
   }
   .noodles__form-fieldset-wrapper--main .label-radio__text--width-auto {
-    margin-left: -45px;
+    width: 110px;
   }
   .noodles__form-fieldset-wrapper--more .noodles__form-label {
     font-size: 12px;
