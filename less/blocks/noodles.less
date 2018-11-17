@@ -67,7 +67,7 @@
       width: 120px;
 
       &--width-auto {
-        width: auto;
+        width: 175px;
         margin-left: -35px;
         text-align: center;
       }
@@ -109,6 +109,13 @@
       .noodles__form-list {
         width: auto;
       }
+
+      .label-radio__text {
+        &--width-auto {
+          width: 150px;
+          margin-left: -25px;
+        }
+      }
     }
 
     &--more {
@@ -145,6 +152,15 @@
   }
 
   @media (max-width: @desktop) {
+    &--main {
+      .label-radio__text {
+        &--width-auto {
+          width: 130px;
+          margin-left: -25px;
+        }
+      }
+    }
+
     &--more {
       .noodles__form-label {
         font-size: 13px;
@@ -178,7 +194,7 @@
 
       .label-radio__text {
         &--width-auto {
-          margin-left: -45px;
+          width: 110px;
         }
       }
     }
