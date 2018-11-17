@@ -7783,7 +7783,6 @@ body {
     font-size: 12px;
   }
 }
-
 @media (max-width: 767px) {
   .breadcrumbs-menu .breadcrumbs__item:first-child {
     display: block;
@@ -8544,7 +8543,6 @@ body {
 .drop-down__input-search:focus::placeholder {
   opacity: 0;
 }
-
 .sales-title {
   font-size: 30px;
   text-transform: uppercase;
@@ -8573,7 +8571,45 @@ body {
 }
 @media (max-width: 767px) {
   .sales-textblock b {
-=======
+    margin-bottom: 15px;
+  }
+}
+.sales-textblock span {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .sales-textblock span {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+}
+.sales-textblock__first-b {
+  text-transform: uppercase;
+}
+.sales-banner {
+  margin-bottom: 80px;
+}
+.sales-banner__img {
+  width: 100%;
+}
+.about-wrapper {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.about-page__title {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.about-page__span {
+  display: block;
+  font-size: 12px;
+  line-height: 22px;
+  margin-bottom: 25px;
+}
 .contacts {
   padding-bottom: 80px;
 }
@@ -8702,48 +8738,10 @@ body {
 }
 @media (max-width: 767px) {
   .contacts__address-title {
-
     margin-bottom: 15px;
     font-size: 16px;
   }
 }
-
-.sales-textblock span {
-  font-size: 16px;
-  margin-bottom: 20px;
-}
-@media (max-width: 767px) {
-  .sales-textblock span {
-    font-size: 14px;
-    margin-bottom: 10px;
-  }
-}
-.sales-textblock__first-b {
-  text-transform: uppercase;
-}
-.sales-banner {
-  margin-bottom: 80px;
-}
-.sales-banner__img {
-  width: 100%;
-}
-.about-wrapper {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.about-page__title {
-  font-size: 18px;
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-.about-page__span {
-  display: block;
-  font-size: 12px;
-  line-height: 22px;
-  margin-bottom: 25px;
-=======
 .contacts__address-text {
   margin: 0;
   font-size: 16px;
@@ -8786,5 +8784,4 @@ body {
 .gm-ui-hover-effect,
 .gm-style-iw1 {
   display: none !important;
-
 }
